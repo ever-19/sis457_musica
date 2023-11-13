@@ -41,21 +41,21 @@ namespace CpMusica
 
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
-            Size = new Size(830, 348);
+            Size = new Size(816, 334);
             listar();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(830, 480);
+            Size = new Size(816, 479);
             txtUsuario.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {  
             esNuevo = false;
-            Size = new Size(830, 480);
+            Size = new Size(816, 479);
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
@@ -67,7 +67,7 @@ namespace CpMusica
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(830, 347);
+            Size = new Size(816, 334);
             limpiar();
         }
 

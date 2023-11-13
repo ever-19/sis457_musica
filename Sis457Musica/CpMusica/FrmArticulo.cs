@@ -66,7 +66,7 @@ namespace CpMusica
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(830, 462);
+            Size = new Size(830, 489);
             txtCodigo.Focus();
         }
 

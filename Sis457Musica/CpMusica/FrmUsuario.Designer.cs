@@ -187,7 +187,7 @@
             this.gbxDatos.Size = new System.Drawing.Size(783, 124);
             this.gbxDatos.TabIndex = 28;
             this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "Datos del Artículo";
+            this.gbxDatos.Text = "Datos de Usuario";
             // 
             // txtIdEmpleado
             // 
@@ -294,7 +294,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 440);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);

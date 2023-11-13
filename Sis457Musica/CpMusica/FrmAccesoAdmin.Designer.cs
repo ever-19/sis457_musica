@@ -190,9 +190,9 @@
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.ForeColor = System.Drawing.Color.White;
-            this.gbxDatos.Location = new System.Drawing.Point(5, 316);
+            this.gbxDatos.Location = new System.Drawing.Point(4, 326);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(790, 115);
+            this.gbxDatos.Size = new System.Drawing.Size(790, 122);
             this.gbxDatos.TabIndex = 21;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "DETALLES CODIGO DE ACCESO";
@@ -209,9 +209,10 @@
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(286, 18);
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(286, 19);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(43, 13);
+            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
             this.lblCodigo.TabIndex = 8;
             this.lblCodigo.Text = "Código:";
             // 

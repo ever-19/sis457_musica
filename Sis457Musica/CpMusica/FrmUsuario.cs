@@ -115,6 +115,7 @@ namespace CpMusica
                 usuario.idEmpleado =  Convert.ToInt32(txtIdEmpleado.Text);
                 usuario.usuario1 = txtUsuario.Text.Trim();
                 usuario.clave = Util.Encrypt(txtClave.Text);
+                usuario.rol = cbxRol.Text.Trim();
                 usuario.usuarioRegistro = "SIS457 - Musica";
 
                 if (esNuevo)
@@ -160,6 +161,9 @@ namespace CpMusica
             }
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,11 +26,10 @@ namespace ClnMusica
                 var existente = context.Empleado.Find(empleado.id);
                 existente.cedulaIdentidad = empleado.cedulaIdentidad;
                 existente.nombre = empleado.nombre;
-                existente.apellidoPaterno = empleado.apellidoPaterno;
-                existente.apellidoMaterno = empleado.apellidoMaterno;
+                existente.primerApellido = empleado.primerApellido;
+                existente.segundoApellido = empleado.segundoApellido;
                 existente.sexo = empleado.sexo;
                 existente.fechaContrato = empleado.fechaContrato;
-                existente.cargo = empleado.cargo;
                 existente.celular = empleado.celular;
                 existente.usuarioRegistro = empleado.usuarioRegistro;
                 return context.SaveChanges();

@@ -42,12 +42,12 @@
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
+            this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.txtApellidoPaterno = new System.Windows.Forms.TextBox();
-            this.lblApellidoMaterno = new System.Windows.Forms.Label();
-            this.lblApellidoPaterno = new System.Windows.Forms.Label();
+            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
+            this.lblSegundoapellido = new System.Windows.Forms.Label();
+            this.lblPrimerApellido = new System.Windows.Forms.Label();
             this.cbxSexo = new System.Windows.Forms.ComboBox();
             this.lblFechaContrato = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
@@ -199,12 +199,12 @@
             this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
             this.gbxDatos.Controls.Add(this.dtpFecha);
             this.gbxDatos.Controls.Add(this.txtCelular);
-            this.gbxDatos.Controls.Add(this.txtApellidoMaterno);
+            this.gbxDatos.Controls.Add(this.txtSegundoApellido);
             this.gbxDatos.Controls.Add(this.lblCelular);
             this.gbxDatos.Controls.Add(this.lblCargo);
-            this.gbxDatos.Controls.Add(this.txtApellidoPaterno);
-            this.gbxDatos.Controls.Add(this.lblApellidoMaterno);
-            this.gbxDatos.Controls.Add(this.lblApellidoPaterno);
+            this.gbxDatos.Controls.Add(this.txtPrimerApellido);
+            this.gbxDatos.Controls.Add(this.lblSegundoapellido);
+            this.gbxDatos.Controls.Add(this.lblPrimerApellido);
             this.gbxDatos.Controls.Add(this.cbxSexo);
             this.gbxDatos.Controls.Add(this.lblFechaContrato);
             this.gbxDatos.Controls.Add(this.lblSexo);
@@ -244,13 +244,13 @@
             this.txtCelular.Size = new System.Drawing.Size(152, 21);
             this.txtCelular.TabIndex = 29;
             // 
-            // txtApellidoMaterno
+            // txtSegundoApellido
             // 
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(140, 108);
-            this.txtApellidoMaterno.MaxLength = 250;
-            this.txtApellidoMaterno.Name = "txtApellidoMaterno";
-            this.txtApellidoMaterno.Size = new System.Drawing.Size(184, 21);
-            this.txtApellidoMaterno.TabIndex = 27;
+            this.txtSegundoApellido.Location = new System.Drawing.Point(140, 108);
+            this.txtSegundoApellido.MaxLength = 250;
+            this.txtSegundoApellido.Name = "txtSegundoApellido";
+            this.txtSegundoApellido.Size = new System.Drawing.Size(184, 21);
+            this.txtSegundoApellido.TabIndex = 27;
             // 
             // lblCelular
             // 
@@ -270,31 +270,31 @@
             this.lblCargo.TabIndex = 27;
             this.lblCargo.Text = "Cargo:";
             // 
-            // txtApellidoPaterno
+            // txtPrimerApellido
             // 
-            this.txtApellidoPaterno.Location = new System.Drawing.Point(140, 79);
-            this.txtApellidoPaterno.MaxLength = 250;
-            this.txtApellidoPaterno.Name = "txtApellidoPaterno";
-            this.txtApellidoPaterno.Size = new System.Drawing.Size(184, 21);
-            this.txtApellidoPaterno.TabIndex = 26;
+            this.txtPrimerApellido.Location = new System.Drawing.Point(140, 79);
+            this.txtPrimerApellido.MaxLength = 250;
+            this.txtPrimerApellido.Name = "txtPrimerApellido";
+            this.txtPrimerApellido.Size = new System.Drawing.Size(184, 21);
+            this.txtPrimerApellido.TabIndex = 26;
             // 
-            // lblApellidoMaterno
+            // lblSegundoapellido
             // 
-            this.lblApellidoMaterno.AutoSize = true;
-            this.lblApellidoMaterno.Location = new System.Drawing.Point(11, 111);
-            this.lblApellidoMaterno.Name = "lblApellidoMaterno";
-            this.lblApellidoMaterno.Size = new System.Drawing.Size(103, 15);
-            this.lblApellidoMaterno.TabIndex = 25;
-            this.lblApellidoMaterno.Text = "Apellido Materno:";
+            this.lblSegundoapellido.AutoSize = true;
+            this.lblSegundoapellido.Location = new System.Drawing.Point(11, 111);
+            this.lblSegundoapellido.Name = "lblSegundoapellido";
+            this.lblSegundoapellido.Size = new System.Drawing.Size(107, 15);
+            this.lblSegundoapellido.TabIndex = 25;
+            this.lblSegundoapellido.Text = "Segundo apellido:";
             // 
-            // lblApellidoPaterno
+            // lblPrimerApellido
             // 
-            this.lblApellidoPaterno.AutoSize = true;
-            this.lblApellidoPaterno.Location = new System.Drawing.Point(13, 83);
-            this.lblApellidoPaterno.Name = "lblApellidoPaterno";
-            this.lblApellidoPaterno.Size = new System.Drawing.Size(97, 15);
-            this.lblApellidoPaterno.TabIndex = 24;
-            this.lblApellidoPaterno.Text = "ApellidoPaterno:";
+            this.lblPrimerApellido.AutoSize = true;
+            this.lblPrimerApellido.Location = new System.Drawing.Point(13, 83);
+            this.lblPrimerApellido.Name = "lblPrimerApellido";
+            this.lblPrimerApellido.Size = new System.Drawing.Size(94, 15);
+            this.lblPrimerApellido.TabIndex = 24;
+            this.lblPrimerApellido.Text = "Primer apellido:";
             // 
             // cbxSexo
             // 
@@ -524,10 +524,10 @@
         private System.Windows.Forms.Label lblCedulaIdentidad;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label lblApellidoMaterno;
-        private System.Windows.Forms.Label lblApellidoPaterno;
-        private System.Windows.Forms.TextBox txtApellidoPaterno;
-        private System.Windows.Forms.TextBox txtApellidoMaterno;
+        private System.Windows.Forms.Label lblSegundoapellido;
+        private System.Windows.Forms.Label lblPrimerApellido;
+        private System.Windows.Forms.TextBox txtPrimerApellido;
+        private System.Windows.Forms.TextBox txtSegundoApellido;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;

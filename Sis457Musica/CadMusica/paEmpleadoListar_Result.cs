@@ -16,11 +16,10 @@ namespace CadMusica
         public int id { get; set; }
         public string cedulaIdentidad { get; set; }
         public string nombre { get; set; }
-        public string apellidoPaterno { get; set; }
-        public string apellidoMaterno { get; set; }
+        public string primerApellido { get; set; }
+        public string segundoApellido { get; set; }
         public string sexo { get; set; }
         public System.DateTime fechaContrato { get; set; }
-        public string cargo { get; set; }
         public long celular { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }

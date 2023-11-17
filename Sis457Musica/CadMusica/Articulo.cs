@@ -18,11 +18,14 @@ namespace CadMusica
         public string codigo { get; set; }
         public string descripcion { get; set; }
         public string unidadMedida { get; set; }
-        public string categoria { get; set; }
         public decimal precio { get; set; }
         public int cantidadExistente { get; set; }
+        public string marca { get; set; }
+        public int idCategoria { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }
+    
+        public virtual Categoria Categoria { get; set; }
     }
 }

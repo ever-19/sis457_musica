@@ -63,6 +63,8 @@
             this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCantidad = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
@@ -253,6 +255,8 @@
             // gbxDatos
             // 
             this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.txtMarca);
+            this.gbxDatos.Controls.Add(this.lblMarca);
             this.gbxDatos.Controls.Add(this.label2);
             this.gbxDatos.Controls.Add(this.cbxCategoria);
             this.gbxDatos.Controls.Add(this.nudPrecio);
@@ -288,13 +292,9 @@
             // 
             this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Items.AddRange(new object[] {
-            "Instrumento",
-            "Audio",
-            ""});
             this.cbxCategoria.Location = new System.Drawing.Point(424, 18);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(184, 21);
+            this.cbxCategoria.Size = new System.Drawing.Size(120, 21);
             this.cbxCategoria.TabIndex = 23;
             // 
             // lblPrecio
@@ -413,6 +413,23 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(562, 21);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(52, 13);
+            this.lblMarca.TabIndex = 24;
+            this.lblMarca.Text = "Categoria";
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.Location = new System.Drawing.Point(620, 19);
+            this.txtMarca.MaxLength = 250;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(107, 20);
+            this.txtMarca.TabIndex = 25;
+            // 
             // FrmArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,6 +502,8 @@
         private System.Windows.Forms.ErrorProvider erpPrecio;
         private System.Windows.Forms.ErrorProvider erpCantidad;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.TextBox txtMarca;
     }
 }
 

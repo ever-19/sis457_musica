@@ -27,27 +27,18 @@ namespace CadMusica
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<AccesoAdmin> AccesoAdmin { get; set; }
-        public virtual DbSet<Empleado> Empleado { get; set; }
         public virtual DbSet<Articulo> Articulo { get; set; }
+        public virtual DbSet<Categoria> Categoria { get; set; }
+        public virtual DbSet<Empleado> Empleado { get; set; }
+        public virtual DbSet<Usuario> Usuario { get; set; }
     
-        public virtual ObjectResult<paArticuloListar_Result> paArticuloListar(string parametro)
+        public virtual ObjectResult<paCategoriaListar_Result> paCategoriaListar(string parametro)
         {
             var parametroParameter = parametro != null ?
                 new ObjectParameter("parametro", parametro) :
                 new ObjectParameter("parametro", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paArticuloListar_Result>("paArticuloListar", parametroParameter);
-        }
-    
-        public virtual ObjectResult<paAccesoAdminListar_Result> paAccesoAdminListar(string parametro)
-        {
-            var parametroParameter = parametro != null ?
-                new ObjectParameter("parametro", parametro) :
-                new ObjectParameter("parametro", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paAccesoAdminListar_Result>("paAccesoAdminListar", parametroParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paCategoriaListar_Result>("paCategoriaListar", parametroParameter);
         }
     
         public virtual ObjectResult<paEmpleadoListar_Result> paEmpleadoListar(string parametro)
@@ -66,6 +57,15 @@ namespace CadMusica
                 new ObjectParameter("parametro", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paUsuarioListar_Result>("paUsuarioListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paArticuloListar_Result> paArticuloListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paArticuloListar_Result>("paArticuloListar", parametroParameter);
         }
     }
 }

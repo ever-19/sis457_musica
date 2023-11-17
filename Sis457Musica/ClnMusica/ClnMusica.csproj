@@ -54,21 +54,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccesoAdminCln.cs" />
     <Compile Include="ArticuloCln.cs" />
+    <Compile Include="CategoriaCln.cs" />
     <Compile Include="EmpleadoCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioCln.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CadMusica\CadMusica.csproj">
-      <Project>{2f0ed43c-f3cc-43df-94cd-511e0194180b}</Project>
-      <Name>CadMusica</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CadMusica\CadMusica.csproj">
+      <Project>{c9e2f820-f272-449b-ae24-72d51caaee7c}</Project>
+      <Name>CadMusica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

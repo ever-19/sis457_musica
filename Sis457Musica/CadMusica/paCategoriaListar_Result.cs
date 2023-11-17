@@ -11,10 +11,10 @@ namespace CadMusica
 {
     using System;
     
-    public partial class paAccesoAdminListar_Result
+    public partial class paCategoriaListar_Result
     {
         public int id { get; set; }
-        public string codigo { get; set; }
+        public string nombre { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }

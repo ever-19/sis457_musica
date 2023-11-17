@@ -18,6 +18,7 @@ namespace CadMusica
         public int idEmpleado { get; set; }
         public string usuario1 { get; set; }
         public string clave { get; set; }
+        public string rol { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }

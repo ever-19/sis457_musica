@@ -37,6 +37,7 @@ namespace ClnMusica
                 var existente = context.Usuario.Find(usuario.id);
                 existente.usuario1 = usuario.usuario1;
                 existente.clave = usuario.clave;
+                existente.rol = usuario.rol;
                 existente.usuarioRegistro = usuario.usuarioRegistro;
                 return context.SaveChanges();
             }

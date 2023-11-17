@@ -27,7 +27,8 @@ namespace ClnMusica
                 existente.codigo = articulo.codigo;
                 existente.descripcion = articulo.descripcion;
                 existente.unidadMedida = articulo.unidadMedida;
-                existente.categoria = articulo.categoria;
+                existente.marca = articulo.marca;
+                existente.idCategoria = articulo.idCategoria;
                 existente.precio = articulo.precio;
                 existente.cantidadExistente = articulo.cantidadExistente;
                 existente.usuarioRegistro = articulo.usuarioRegistro;

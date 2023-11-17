@@ -51,6 +51,8 @@
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.cbxRol = new System.Windows.Forms.ComboBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -173,6 +175,8 @@
             // gbxDatos
             // 
             this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.cbxRol);
+            this.gbxDatos.Controls.Add(this.lblRol);
             this.gbxDatos.Controls.Add(this.txtIdEmpleado);
             this.gbxDatos.Controls.Add(this.txtUsuario);
             this.gbxDatos.Controls.Add(this.lblIdEmpleado);
@@ -289,6 +293,26 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Location = new System.Drawing.Point(324, 33);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(26, 13);
+            this.lblRol.TabIndex = 30;
+            this.lblRol.Text = "Rol:";
+            // 
+            // cbxRol
+            // 
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.Items.AddRange(new object[] {
+            "Administrador",
+            "Vendedor"});
+            this.cbxRol.Location = new System.Drawing.Point(356, 30);
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(121, 21);
+            this.cbxRol.TabIndex = 31;
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +364,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtIdEmpleado;
+        private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.ComboBox cbxRol;
     }
 }

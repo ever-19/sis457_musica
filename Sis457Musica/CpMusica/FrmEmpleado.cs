@@ -68,11 +68,10 @@ namespace CpMusica
             var empleado = EmpleadoCln.get(id);
             txtCedulaIdentidad.Text = empleado.cedulaIdentidad;
             txtNombre.Text = empleado.nombre;
-            txtApellidoPaterno.Text = empleado.apellidoPaterno;
-            txtApellidoMaterno.Text = empleado.apellidoMaterno;
+            txtPrimerApellido.Text = empleado.primerApellido;
+            txtSegundoApellido.Text = empleado.segundoApellido;
             cbxSexo.Text = empleado.sexo;
             txtFecha.Text = Convert.ToString(empleado.fechaContrato);
-            cbxCargo.Text = empleado.cargo;
             txtCelular.Text = Convert.ToString(empleado.celular);
         }
 
@@ -104,8 +103,8 @@ namespace CpMusica
         {
             txtCedulaIdentidad.Text = string.Empty;
             txtNombre.Text = string.Empty;
-            txtApellidoPaterno.Text = string.Empty;
-            txtApellidoMaterno.Text = string.Empty;
+            txtPrimerApellido.Text = string.Empty;
+            txtSegundoApellido.Text = string.Empty;
             cbxSexo.SelectedIndex = -1;
             txtFecha.Text = string.Empty;
             cbxCargo.SelectedIndex = -1;
@@ -119,9 +118,9 @@ namespace CpMusica
             bool esValido = true;
             erpCedulaIdentidad.SetError(txtCedulaIdentidad, "");
             erpNombre.SetError(txtNombre, "");
-            erpApellidoPaterno.SetError(txtApellidoPaterno, "");
-            erpApellidoPaterno.SetError(txtApellidoPaterno, "");
-            erpApellidoMaterno.SetError(txtApellidoMaterno, "");
+            erpApellidoPaterno.SetError(txtPrimerApellido, "");
+            erpApellidoPaterno.SetError(txtPrimerApellido, "");
+            erpApellidoMaterno.SetError(txtSegundoApellido, "");
             erpSexo.SetError(cbxSexo, "");
             erpFechaContrato.SetError(txtFecha, "");
             erpCargo.SetError(cbxCargo, "");
@@ -137,16 +136,16 @@ namespace CpMusica
                 esValido = false;
                 erpNombre.SetError(txtNombre, "El campo Nombre es obligatorio");
             }
-            if (string.IsNullOrEmpty(txtApellidoPaterno.Text))
+            if (string.IsNullOrEmpty(txtPrimerApellido.Text))
             {
                 esValido = false;
-                erpApellidoPaterno.SetError(txtApellidoPaterno, "El campo Apellido Paterno de Medida es obligatorio");
+                erpApellidoPaterno.SetError(txtPrimerApellido, "El campo Apellido Paterno de Medida es obligatorio");
             }
 
-            if (string.IsNullOrEmpty(txtApellidoMaterno.Text))
+            if (string.IsNullOrEmpty(txtSegundoApellido.Text))
             {
                 esValido = false;
-                erpApellidoPaterno.SetError(txtApellidoMaterno, "El campo Apellido Paterno de Medida es obligatorio");
+                erpApellidoPaterno.SetError(txtSegundoApellido, "El campo Apellido Paterno de Medida es obligatorio");
             }
 
             if (string.IsNullOrEmpty(cbxSexo.Text))
@@ -179,11 +178,10 @@ namespace CpMusica
                 var empleado = new Empleado();
                 empleado.cedulaIdentidad = txtCedulaIdentidad.Text.Trim();
                 empleado.nombre = txtNombre.Text.Trim();
-                empleado.apellidoPaterno = txtApellidoPaterno.Text.Trim();
-                empleado.apellidoMaterno = txtApellidoMaterno.Text.Trim();
+                empleado.primerApellido = txtPrimerApellido.Text.Trim();
+                empleado.segundoApellido = txtSegundoApellido.Text.Trim();
                 empleado.sexo = cbxSexo.Text;
                 empleado.fechaContrato = Convert.ToDateTime(txtFecha.Text);
-                empleado.cargo = cbxCargo.Text;
                 empleado.celular = Convert.ToInt64(txtCelular.Text);
                 empleado.usuarioRegistro = "SIS457 - Musica";
 

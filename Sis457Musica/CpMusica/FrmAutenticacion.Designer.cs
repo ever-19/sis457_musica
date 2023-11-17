@@ -37,13 +37,8 @@
             this.lblClave = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.liblCrearUsuario = new System.Windows.Forms.LinkLabel();
-            this.txtAcceso = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.erpAcceso = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnAcceso = new System.Windows.Forms.Button();
             this.pctLogo = new System.Windows.Forms.PictureBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.erpAcceso)).BeginInit();
@@ -130,57 +125,9 @@
             this.lblTitulo.Text = "Acceso al Sistema";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // liblCrearUsuario
-            // 
-            this.liblCrearUsuario.AutoSize = true;
-            this.liblCrearUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.liblCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.liblCrearUsuario.LinkColor = System.Drawing.Color.Yellow;
-            this.liblCrearUsuario.Location = new System.Drawing.Point(157, 180);
-            this.liblCrearUsuario.Name = "liblCrearUsuario";
-            this.liblCrearUsuario.Size = new System.Drawing.Size(90, 16);
-            this.liblCrearUsuario.TabIndex = 21;
-            this.liblCrearUsuario.TabStop = true;
-            this.liblCrearUsuario.Text = "Crear Usuario";
-            this.liblCrearUsuario.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.liblCrearUsuario_LinkClicked);
-            // 
-            // txtAcceso
-            // 
-            this.txtAcceso.Location = new System.Drawing.Point(32, 242);
-            this.txtAcceso.Name = "txtAcceso";
-            this.txtAcceso.PasswordChar = '*';
-            this.txtAcceso.Size = new System.Drawing.Size(166, 20);
-            this.txtAcceso.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 223);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 16);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Codigo de Acceso:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // erpAcceso
             // 
             this.erpAcceso.ContainerControl = this;
-            // 
-            // btnAcceso
-            // 
-            this.btnAcceso.Image = global::CpMusica.Properties.Resources.login_ok;
-            this.btnAcceso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcceso.Location = new System.Drawing.Point(222, 226);
-            this.btnAcceso.Name = "btnAcceso";
-            this.btnAcceso.Size = new System.Drawing.Size(97, 42);
-            this.btnAcceso.TabIndex = 23;
-            this.btnAcceso.Text = "Acceso";
-            this.btnAcceso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAcceso.UseVisualStyleBackColor = true;
-            this.btnAcceso.Click += new System.EventHandler(this.btnAcceso_Click);
             // 
             // pctLogo
             // 
@@ -192,19 +139,6 @@
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctLogo.TabIndex = 18;
             this.pctLogo.TabStop = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = global::CpMusica.Properties.Resources.cancel;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(325, 226);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(97, 42);
-            this.btnCancelar.TabIndex = 25;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // erpUsuario
             // 
@@ -219,12 +153,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(427, 274);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnAcceso);
-            this.Controls.Add(this.txtAcceso);
-            this.Controls.Add(this.liblCrearUsuario);
+            this.ClientSize = new System.Drawing.Size(427, 213);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pctLogo);
@@ -258,12 +187,7 @@
         private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.LinkLabel liblCrearUsuario;
-        private System.Windows.Forms.TextBox txtAcceso;
-        private System.Windows.Forms.Button btnAcceso;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider erpAcceso;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ErrorProvider erpUsuario;
         private System.Windows.Forms.ErrorProvider erpClave;
     }

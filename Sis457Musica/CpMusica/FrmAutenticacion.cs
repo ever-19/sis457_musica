@@ -77,69 +77,11 @@ namespace CpMusica
         }
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        private bool validar2()
-        {
-            bool esValido = true;
-            erpAcceso.SetError(txtAcceso, "");
-            if (string.IsNullOrEmpty(txtAcceso.Text))
-            {
-                erpAcceso.SetError(txtAcceso, "No Insertarste nigun Codigo");
-                esValido = false;
-            }
-            return esValido;
-        }
-
-        private void liblCrearUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Size = new Size(443, 313);
-            txtAcceso.Focus();
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Size = new Size(443, 244);
             
         }
-
-
-
-        private void btnAcceso_Click(object sender, EventArgs e)
-        {
-            if (validar2())
-            {
-                var acceso = AccesoAdminCln.validar2(txtAcceso.Text);
-                if (acceso != null)
-                {
-                    txtAcceso.Text = string.Empty;
-                    txtAcceso.Focus();
-                    txtAcceso.SelectAll();
-                    Visible = false;
-                    new FrmControlNuevo(this).ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Codigo Incorrecto",
-                        "::: Musica - Mensaje :::", MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                }
-            }
-        }
-
 
 
         private void label1_Click(object sender, EventArgs e)

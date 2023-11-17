@@ -23,7 +23,7 @@ namespace CpMusica
         }
         private void FrmArticulo_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmAutenticacion.Visible = true;
+           // frmAutenticacion.Visible = true;
         }
        
 
@@ -36,6 +36,7 @@ namespace CpMusica
         public FrmArticulo()
         {
             InitializeComponent();
+            cargarCategoria();
         }
 
         private void listar()
@@ -46,15 +47,25 @@ namespace CpMusica
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["descripcion"].HeaderText = "Descripción";
+
+            dgvLista.Columns["nombre_categoria"].HeaderText = "Categoria"; 
             dgvLista.Columns["unidadMedida"].HeaderText = "Unidad de Medida";
-            dgvLista.Columns["categoria"].HeaderText = "Categoria";
+            
             dgvLista.Columns["precio"].HeaderText = "Precio";
             dgvLista.Columns["cantidadExistente"].HeaderText = "Cantidad Existente";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha del Registro";
             btnEditar.Enabled = articulos.Count > 0;
             btnEliminar.Enabled = articulos.Count > 0;
-            if (articulos.Count > 0) dgvLista.Rows[0].Cells["codigo"].Selected = true;
+            if (articulos.Count > 0) dgvLista.Rows[0].Cells["descripcion"].Selected = true;
+        }
+
+        private void cargarCategoria()
+        {
+            cbxCategoria.DataSource = CategoriaCln.listar();
+            cbxCategoria.DisplayMember = "nombre";
+            cbxCategoria.ValueMember = "id";
+
         }
 
         private void FrmArticulo_Load(object sender, EventArgs e)
@@ -80,8 +91,9 @@ namespace CpMusica
             var articulo = ArticuloCln.get(id);
             txtCodigo.Text = articulo.codigo;
             txtDescripcion.Text = articulo.descripcion;
+            txtMarca.Text = articulo.marca;
             cbxUnidadMedida.Text = articulo.unidadMedida;
-            cbxCategoria.Text = articulo.categoria;
+            cbxCategoria.Text = Convert.ToString(articulo.idCategoria);
             nudPrecio.Value = articulo.precio;
             nudCantidadExistente.Value = articulo.cantidadExistente;
         }
@@ -166,7 +178,8 @@ namespace CpMusica
                 articulo.codigo = txtCodigo.Text.Trim();
                 articulo.descripcion = txtDescripcion.Text.Trim();
                 articulo.unidadMedida = cbxUnidadMedida.Text;
-                articulo.categoria = cbxCategoria.Text;
+                articulo.marca = txtMarca.Text;
+                articulo.idCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                 articulo.precio = nudPrecio.Value;
                 articulo.cantidadExistente = Convert.ToInt32(nudCantidadExistente.Value);
                 articulo.usuarioRegistro = "SIS457 - Musica";
@@ -175,6 +188,7 @@ namespace CpMusica
                 {
                     articulo.fechaRegistro = DateTime.Now;
                     articulo.estado = 1;
+                    articulo.idCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                     ArticuloCln.insertar(articulo);
                 }
                 else

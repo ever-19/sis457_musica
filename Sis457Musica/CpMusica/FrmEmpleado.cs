@@ -28,14 +28,13 @@ namespace CpMusica
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["cedulaIdentidad"].HeaderText = "Cedula Identidad";
-            dgvLista.Columns["nombre"].HeaderText = "nombre";
-            dgvLista.Columns["apellidoPaterno"].HeaderText = "apellidoPaterno";
-            dgvLista.Columns["apellidoMaterno"].HeaderText = "apellidoMaterno";
+            dgvLista.Columns["nombre"].HeaderText = "Nombre";
+             dgvLista.Columns["primerApellido"].HeaderText = "Primer Apellido";
+            dgvLista.Columns["segundoApellido"].HeaderText = "Segundo Apellido";
             dgvLista.Columns["sexo"].HeaderText = "sexo";
-            dgvLista.Columns["fechaContrato"].HeaderText = "fechaContrato";
-            dgvLista.Columns["cargo"].HeaderText = "cargo";
-            dgvLista.Columns["celular"].HeaderText = "celular";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario";
+            dgvLista.Columns["fechaContrato"].HeaderText = "Fecha Contrato";
+            dgvLista.Columns["celular"].HeaderText = "Celular";
+            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha del Registro";
             btnEditar.Enabled = empleados.Count > 0;
             btnEliminar.Enabled = empleados.Count > 0;
@@ -52,6 +51,7 @@ namespace CpMusica
             esNuevo = true;
             Size = new Size(848, 587);
             txtCedulaIdentidad.Focus();
+            limpiar();
         }
         private void dtpFecha_ValueChanged(object sender, EventArgs e)
         {
@@ -106,8 +106,7 @@ namespace CpMusica
             txtPrimerApellido.Text = string.Empty;
             txtSegundoApellido.Text = string.Empty;
             cbxSexo.SelectedIndex = -1;
-            txtFecha.Text = string.Empty;
-            cbxCargo.SelectedIndex = -1;
+            txtFecha.Text = "dd/mm/aaaa";
             txtCelular.Text = string.Empty;
         }
 
@@ -123,7 +122,6 @@ namespace CpMusica
             erpApellidoMaterno.SetError(txtSegundoApellido, "");
             erpSexo.SetError(cbxSexo, "");
             erpFechaContrato.SetError(txtFecha, "");
-            erpCargo.SetError(cbxCargo, "");
             erpCelular.SetError(txtCelular, "");
 
             if (string.IsNullOrEmpty(txtCedulaIdentidad.Text))
@@ -159,11 +157,6 @@ namespace CpMusica
                 esValido = false;
                 erpFechaContrato.SetError(txtFecha, "El campo Precio de Venta es obligatorio");
             }
-            if (string.IsNullOrEmpty(cbxCargo.Text))
-            {
-                esValido = false;
-                erpCargo.SetError(cbxCargo, "El campo Cantidad es obligatorio");
-            }
             if (string.IsNullOrEmpty(txtCelular.Text))
             {
                 esValido = false;
@@ -183,7 +176,7 @@ namespace CpMusica
                 empleado.sexo = cbxSexo.Text;
                 empleado.fechaContrato = Convert.ToDateTime(txtFecha.Text);
                 empleado.celular = Convert.ToInt64(txtCelular.Text);
-                empleado.usuarioRegistro = "SIS457 - Musica";
+                empleado.usuarioRegistro = Util.usuario.usuario1;
 
                 if (esNuevo)
                 {

@@ -40,7 +40,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.txtIdEmpleado = new System.Windows.Forms.TextBox();
+            this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.lblRol = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblIdEmpleado = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
@@ -51,8 +52,7 @@
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.cbxRol = new System.Windows.Forms.ComboBox();
+            this.cbxCedulaIdentidad = new System.Windows.Forms.ComboBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -175,9 +175,9 @@
             // gbxDatos
             // 
             this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.cbxCedulaIdentidad);
             this.gbxDatos.Controls.Add(this.cbxRol);
             this.gbxDatos.Controls.Add(this.lblRol);
-            this.gbxDatos.Controls.Add(this.txtIdEmpleado);
             this.gbxDatos.Controls.Add(this.txtUsuario);
             this.gbxDatos.Controls.Add(this.lblIdEmpleado);
             this.gbxDatos.Controls.Add(this.txtClave);
@@ -193,13 +193,25 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos de Usuario";
             // 
-            // txtIdEmpleado
+            // cbxRol
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(89, 30);
-            this.txtIdEmpleado.MaxLength = 250;
-            this.txtIdEmpleado.Name = "txtIdEmpleado";
-            this.txtIdEmpleado.Size = new System.Drawing.Size(184, 20);
-            this.txtIdEmpleado.TabIndex = 29;
+            this.cbxRol.FormattingEnabled = true;
+            this.cbxRol.Items.AddRange(new object[] {
+            "Administrador",
+            "Vendedor"});
+            this.cbxRol.Location = new System.Drawing.Point(356, 30);
+            this.cbxRol.Name = "cbxRol";
+            this.cbxRol.Size = new System.Drawing.Size(121, 21);
+            this.cbxRol.TabIndex = 31;
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Location = new System.Drawing.Point(324, 33);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(26, 13);
+            this.lblRol.TabIndex = 30;
+            this.lblRol.Text = "Rol:";
             // 
             // txtUsuario
             // 
@@ -214,9 +226,9 @@
             this.lblIdEmpleado.AutoSize = true;
             this.lblIdEmpleado.Location = new System.Drawing.Point(22, 33);
             this.lblIdEmpleado.Name = "lblIdEmpleado";
-            this.lblIdEmpleado.Size = new System.Drawing.Size(66, 13);
+            this.lblIdEmpleado.Size = new System.Drawing.Size(20, 13);
             this.lblIdEmpleado.TabIndex = 27;
-            this.lblIdEmpleado.Text = "IdEmpleadp:";
+            this.lblIdEmpleado.Text = "CI:";
             // 
             // txtClave
             // 
@@ -293,25 +305,16 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
-            // lblRol
+            // cbxCedulaIdentidad
             // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.Location = new System.Drawing.Point(324, 33);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(26, 13);
-            this.lblRol.TabIndex = 30;
-            this.lblRol.Text = "Rol:";
-            // 
-            // cbxRol
-            // 
-            this.cbxRol.FormattingEnabled = true;
-            this.cbxRol.Items.AddRange(new object[] {
+            this.cbxCedulaIdentidad.FormattingEnabled = true;
+            this.cbxCedulaIdentidad.Items.AddRange(new object[] {
             "Administrador",
             "Vendedor"});
-            this.cbxRol.Location = new System.Drawing.Point(356, 30);
-            this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(121, 21);
-            this.cbxRol.TabIndex = 31;
+            this.cbxCedulaIdentidad.Location = new System.Drawing.Point(89, 30);
+            this.cbxCedulaIdentidad.Name = "cbxCedulaIdentidad";
+            this.cbxCedulaIdentidad.Size = new System.Drawing.Size(184, 21);
+            this.cbxCedulaIdentidad.TabIndex = 32;
             // 
             // FrmUsuario
             // 
@@ -363,8 +366,8 @@
         private System.Windows.Forms.ErrorProvider erpClave;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtIdEmpleado;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.ComboBox cbxRol;
+        private System.Windows.Forms.ComboBox cbxCedulaIdentidad;
     }
 }

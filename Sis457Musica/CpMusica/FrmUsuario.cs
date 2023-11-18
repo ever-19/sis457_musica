@@ -22,6 +22,7 @@ namespace CpMusica
         public FrmUsuario()
         {
             InitializeComponent();
+
         }
 
         private void listar()
@@ -30,8 +31,11 @@ namespace CpMusica
             dgvLista.DataSource = usuarios;
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
+            dgvLista.Columns["idEmpleado"].Visible = false;
+            dgvLista.Columns["cedulaidentida_empleado"].HeaderText = "Cedula Identidad";
             dgvLista.Columns["usuario"].HeaderText = "Usuario";
             dgvLista.Columns["clave"].HeaderText = "Clave";
+            dgvLista.Columns["rol"].HeaderText = "Rol";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha del Registro";
             btnEditar.Enabled = usuarios.Count > 0;
@@ -43,12 +47,22 @@ namespace CpMusica
         {
             Size = new Size(816, 334);
             listar();
+            cargarCedulaIdentidad();
+        }
+
+        private void cargarCedulaIdentidad()
+        {
+            cbxCedulaIdentidad.DataSource = EmpleadoCln.listar();
+            cbxCedulaIdentidad.DisplayMember = "cedulaIdentidad";
+            cbxCedulaIdentidad.ValueMember = "id";
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
             Size = new Size(816, 479);
+            limpiar();
             txtUsuario.Focus();
         }
 
@@ -60,9 +74,9 @@ namespace CpMusica
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             var usuario = UsuarioCln.get(id);
-            txtIdEmpleado.Text = Convert.ToString(usuario.idEmpleado);
             txtUsuario.Text = usuario.usuario1;
             txtClave.Text = usuario.clave;
+            cbxRol.Text = usuario.rol;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -112,11 +126,11 @@ namespace CpMusica
             {
                
                 var usuario = new Usuario();
-                usuario.idEmpleado =  Convert.ToInt32(txtIdEmpleado.Text);
+                usuario.idEmpleado =  Convert.ToInt32(cbxCedulaIdentidad.SelectedValue);
                 usuario.usuario1 = txtUsuario.Text.Trim();
                 usuario.clave = Util.Encrypt(txtClave.Text);
                 usuario.rol = cbxRol.Text.Trim();
-                usuario.usuarioRegistro = "SIS457 - Musica";
+                usuario.usuarioRegistro = Util.usuario.usuario1;
 
                 if (esNuevo)
                 {
@@ -149,7 +163,7 @@ namespace CpMusica
         {
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-            string usuario1 = dgvLista.Rows[index].Cells["codigo"].Value.ToString();
+            string usuario1 = dgvLista.Rows[index].Cells["usuario"].Value.ToString();
             DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el usuario {usuario1}?",
                 "::: Musica - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dialog == DialogResult.OK)

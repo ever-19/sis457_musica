@@ -34,6 +34,9 @@ namespace CpMusica
         }
 
 
+     
+
+
         private bool validar()
         {
             bool esValido = true;
@@ -65,7 +68,7 @@ namespace CpMusica
                     txtUsuario.Focus();
                     txtUsuario.SelectAll();
                     Visible = false;
-                    new FrmArticulo(this).ShowDialog();
+                    new FrmPrincipal(this).ShowDialog();
                 }
                 else
                 {
@@ -89,6 +92,7 @@ namespace CpMusica
 
         }
 
+       
         
     }
 }

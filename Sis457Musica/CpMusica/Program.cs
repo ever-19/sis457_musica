@@ -16,7 +16,7 @@ namespace CpMusica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmArticulo());
+            Application.Run(new FrmCliente());
         }
     }
 }

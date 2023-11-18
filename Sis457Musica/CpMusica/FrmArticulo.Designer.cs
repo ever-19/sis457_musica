@@ -46,6 +46,8 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.lblMarca = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.lblPrecio = new System.Windows.Forms.Label();
@@ -63,8 +65,6 @@
             this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCantidad = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
@@ -116,6 +116,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
             // lblBusqueda
             // 
@@ -279,14 +280,31 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos del Artículo";
             // 
+            // txtMarca
+            // 
+            this.txtMarca.Location = new System.Drawing.Point(620, 19);
+            this.txtMarca.MaxLength = 250;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(107, 20);
+            this.txtMarca.TabIndex = 25;
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(562, 21);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(40, 13);
+            this.lblMarca.TabIndex = 24;
+            this.lblMarca.Text = "Marca:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(350, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Categoria";
+            this.label2.Text = "Categoria:";
             // 
             // cbxCategoria
             // 
@@ -412,23 +430,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(562, 21);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(52, 13);
-            this.lblMarca.TabIndex = 24;
-            this.lblMarca.Text = "Categoria";
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(620, 19);
-            this.txtMarca.MaxLength = 250;
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(107, 20);
-            this.txtMarca.TabIndex = 25;
             // 
             // FrmArticulo
             // 

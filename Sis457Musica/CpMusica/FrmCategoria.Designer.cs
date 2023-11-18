@@ -28,25 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
             this.gbxDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBusqueda
@@ -57,9 +61,9 @@
             this.lblBusqueda.ForeColor = System.Drawing.Color.White;
             this.lblBusqueda.Location = new System.Drawing.Point(6, 41);
             this.lblBusqueda.Name = "lblBusqueda";
-            this.lblBusqueda.Size = new System.Drawing.Size(108, 15);
+            this.lblBusqueda.Size = new System.Drawing.Size(114, 15);
             this.lblBusqueda.TabIndex = 24;
-            this.lblBusqueda.Text = "Buscar por Codigo";
+            this.lblBusqueda.Text = "Buscar por Nombre";
             // 
             // txtParametro
             // 
@@ -119,40 +123,6 @@
             this.pnlAcciones.Size = new System.Drawing.Size(789, 48);
             this.pnlAcciones.TabIndex = 26;
             // 
-            // gbxDatos
-            // 
-            this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
-            this.gbxDatos.Controls.Add(this.txtCodigo);
-            this.gbxDatos.Controls.Add(this.lblCodigo);
-            this.gbxDatos.Controls.Add(this.btnCancelar);
-            this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.ForeColor = System.Drawing.Color.White;
-            this.gbxDatos.Location = new System.Drawing.Point(5, 317);
-            this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(790, 122);
-            this.gbxDatos.TabIndex = 27;
-            this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "DETALLES CODIGO DE ACCESO";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigo.Location = new System.Drawing.Point(346, 15);
-            this.txtCodigo.MaxLength = 10;
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(184, 20);
-            this.txtCodigo.TabIndex = 13;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(286, 19);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
-            this.lblCodigo.TabIndex = 8;
-            this.lblCodigo.Text = "Código:";
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Image = global::CpMusica.Properties.Resources.close;
@@ -164,6 +134,7 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
@@ -177,6 +148,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -190,6 +162,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -202,6 +175,39 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // gbxDatos
+            // 
+            this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.txtNombre);
+            this.gbxDatos.Controls.Add(this.lblNombre);
+            this.gbxDatos.Controls.Add(this.btnCancelar);
+            this.gbxDatos.Controls.Add(this.btnGuardar);
+            this.gbxDatos.ForeColor = System.Drawing.Color.White;
+            this.gbxDatos.Location = new System.Drawing.Point(5, 317);
+            this.gbxDatos.Name = "gbxDatos";
+            this.gbxDatos.Size = new System.Drawing.Size(790, 122);
+            this.gbxDatos.TabIndex = 27;
+            this.gbxDatos.TabStop = false;
+            this.gbxDatos.Text = "DETALLE DE LA CATEGORIA";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(351, 19);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(171, 20);
+            this.txtNombre.TabIndex = 14;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(286, 19);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.TabIndex = 8;
+            this.lblNombre.Text = "Nombre:";
             // 
             // btnCancelar
             // 
@@ -215,6 +221,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -228,6 +235,24 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // erpNombre
+            // 
+            this.erpNombre.ContainerControl = this;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = global::CpMusica.Properties.Resources.search;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(700, 42);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(91, 42);
+            this.btnBuscar.TabIndex = 12;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FrmCategoria
             // 
@@ -235,6 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblBusqueda);
             this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.lblTitulo);
@@ -242,12 +268,15 @@
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxDatos);
             this.Name = "FrmCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Categorias - Musica :::";
+            this.Load += new System.EventHandler(this.FrmCategoria_Load);
             this.gbxLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.pnlAcciones.ResumeLayout(false);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,9 +295,11 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox gbxDatos;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.ErrorProvider erpNombre;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

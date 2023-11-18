@@ -9,6 +9,16 @@ namespace ClnMusica
 {
     public class UsuarioCln
     {
+
+       /*public static Usuario validar1(string rol)
+        {
+            using (var context = new LabMusicaEntities())
+            {
+                return context.Usuario
+                    .Where(x => x.rol == rol )
+                    .FirstOrDefault();
+            }
+        }*/
         public static Usuario validar(string usuario, string clave)
         {
             using (var context = new LabMusicaEntities()) 

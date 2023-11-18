@@ -44,14 +44,12 @@
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
-            this.lblCargo = new System.Windows.Forms.Label();
             this.txtPrimerApellido = new System.Windows.Forms.TextBox();
             this.lblSegundoapellido = new System.Windows.Forms.Label();
             this.lblPrimerApellido = new System.Windows.Forms.Label();
             this.cbxSexo = new System.Windows.Forms.ComboBox();
             this.lblFechaContrato = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
-            this.cbxCargo = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -201,14 +199,12 @@
             this.gbxDatos.Controls.Add(this.txtCelular);
             this.gbxDatos.Controls.Add(this.txtSegundoApellido);
             this.gbxDatos.Controls.Add(this.lblCelular);
-            this.gbxDatos.Controls.Add(this.lblCargo);
             this.gbxDatos.Controls.Add(this.txtPrimerApellido);
             this.gbxDatos.Controls.Add(this.lblSegundoapellido);
             this.gbxDatos.Controls.Add(this.lblPrimerApellido);
             this.gbxDatos.Controls.Add(this.cbxSexo);
             this.gbxDatos.Controls.Add(this.lblFechaContrato);
             this.gbxDatos.Controls.Add(this.lblSexo);
-            this.gbxDatos.Controls.Add(this.cbxCargo);
             this.gbxDatos.Controls.Add(this.txtNombre);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.Controls.Add(this.btnCancelar);
@@ -238,7 +234,7 @@
             // txtCelular
             // 
             this.txtCelular.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCelular.Location = new System.Drawing.Point(443, 108);
+            this.txtCelular.Location = new System.Drawing.Point(440, 85);
             this.txtCelular.MaxLength = 10;
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(152, 21);
@@ -255,20 +251,11 @@
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(350, 111);
+            this.lblCelular.Location = new System.Drawing.Point(350, 85);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(49, 15);
             this.lblCelular.TabIndex = 28;
             this.lblCelular.Text = "Celular:";
-            // 
-            // lblCargo
-            // 
-            this.lblCargo.AutoSize = true;
-            this.lblCargo.Location = new System.Drawing.Point(350, 82);
-            this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(43, 15);
-            this.lblCargo.TabIndex = 27;
-            this.lblCargo.Text = "Cargo:";
             // 
             // txtPrimerApellido
             // 
@@ -325,18 +312,6 @@
             this.lblSexo.Size = new System.Drawing.Size(38, 15);
             this.lblSexo.TabIndex = 16;
             this.lblSexo.Text = "Sexo:";
-            // 
-            // cbxCargo
-            // 
-            this.cbxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxCargo.FormattingEnabled = true;
-            this.cbxCargo.Items.AddRange(new object[] {
-            "Administrador",
-            "Vendedor"});
-            this.cbxCargo.Location = new System.Drawing.Point(443, 79);
-            this.cbxCargo.Name = "cbxCargo";
-            this.cbxCargo.Size = new System.Drawing.Size(152, 23);
-            this.cbxCargo.TabIndex = 23;
             // 
             // txtNombre
             // 
@@ -405,10 +380,10 @@
             // 
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFecha.Location = new System.Drawing.Point(443, 53);
-            this.txtFecha.MaxLength = 250;
+            this.txtFecha.MaxLength = 10;
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(152, 21);
-            this.txtFecha.TabIndex = 28;
+            this.txtFecha.TabIndex = 10;
             this.txtFecha.Text = "dd/mm/aaaa";
             // 
             // lblBusqueda
@@ -515,7 +490,6 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Label lblFechaContrato;
-        private System.Windows.Forms.ComboBox cbxCargo;
         private System.Windows.Forms.ComboBox cbxSexo;
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.TextBox txtNombre;
@@ -528,7 +502,6 @@
         private System.Windows.Forms.Label lblPrimerApellido;
         private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.TextBox txtSegundoApellido;
-        private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.DateTimePicker dtpFecha;

@@ -45,6 +45,7 @@ namespace CpMusica
             dgvLista.DataSource = articulos;
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
+            dgvLista.Columns["idCategoria"].Visible = false;
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["descripcion"].HeaderText = "Descripción";
 
@@ -78,6 +79,7 @@ namespace CpMusica
         {
             esNuevo = true;
             Size = new Size(830, 489);
+            limpiar();
             txtCodigo.Focus();
         }
 
@@ -93,7 +95,7 @@ namespace CpMusica
             txtDescripcion.Text = articulo.descripcion;
             txtMarca.Text = articulo.marca;
             cbxUnidadMedida.Text = articulo.unidadMedida;
-            cbxCategoria.Text = Convert.ToString(articulo.idCategoria);
+            //cbxCategoria.Text = Convert.ToString();
             nudPrecio.Value = articulo.precio;
             nudCantidadExistente.Value = articulo.cantidadExistente;
         }
@@ -109,7 +111,6 @@ namespace CpMusica
             Close();
         }
        
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             listar();
@@ -182,7 +183,7 @@ namespace CpMusica
                 articulo.idCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                 articulo.precio = nudPrecio.Value;
                 articulo.cantidadExistente = Convert.ToInt32(nudCantidadExistente.Value);
-                articulo.usuarioRegistro = "SIS457 - Musica";
+                articulo.usuarioRegistro = Util.usuario.usuario1;
 
                 if (esNuevo)
                 {
@@ -209,8 +210,9 @@ namespace CpMusica
         {
             txtCodigo.Text = string.Empty;
             txtDescripcion.Text = string.Empty;
+            txtMarca.Text = string.Empty;
             cbxUnidadMedida.SelectedIndex = -1;
-            cbxCategoria.SelectedIndex = -1;
+            //cbxCategoria.SelectedIndex = -1;
             
             nudPrecio.Value = 0;
             nudCantidadExistente.Value = 0;
@@ -232,6 +234,9 @@ namespace CpMusica
             }
         }
 
-        
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            listar();
+        }
     }
 }

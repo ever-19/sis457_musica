@@ -31,6 +31,9 @@ namespace CadMusica
         public virtual DbSet<Categoria> Categoria { get; set; }
         public virtual DbSet<Empleado> Empleado { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Venta> Venta { get; set; }
+        public virtual DbSet<VentaDetalle> VentaDetalle { get; set; }
     
         public virtual ObjectResult<paCategoriaListar_Result> paCategoriaListar(string parametro)
         {
@@ -50,6 +53,15 @@ namespace CadMusica
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paEmpleadoListar_Result>("paEmpleadoListar", parametroParameter);
         }
     
+        public virtual ObjectResult<paArticuloListar_Result> paArticuloListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paArticuloListar_Result>("paArticuloListar", parametroParameter);
+        }
+    
         public virtual ObjectResult<paUsuarioListar_Result> paUsuarioListar(string parametro)
         {
             var parametroParameter = parametro != null ?
@@ -59,13 +71,31 @@ namespace CadMusica
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paUsuarioListar_Result>("paUsuarioListar", parametroParameter);
         }
     
-        public virtual ObjectResult<paArticuloListar_Result> paArticuloListar(string parametro)
+        public virtual ObjectResult<paClienteListar_Result> paClienteListar(string parametro)
         {
             var parametroParameter = parametro != null ?
                 new ObjectParameter("parametro", parametro) :
                 new ObjectParameter("parametro", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paArticuloListar_Result>("paArticuloListar", parametroParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paClienteListar_Result>("paClienteListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paVentaDetalleListar_Result> paVentaDetalleListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paVentaDetalleListar_Result>("paVentaDetalleListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paVentaListar_Result> paVentaListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paVentaListar_Result>("paVentaListar", parametroParameter);
         }
     }
 }

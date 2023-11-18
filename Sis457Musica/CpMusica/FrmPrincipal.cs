@@ -14,11 +14,13 @@ namespace CpMusica
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        FrmAutenticacion frmAutenticacion;
+        public FrmPrincipal(FrmAutenticacion frmAutenticacion)
         {
             InitializeComponent();
             hideSubMenu();
             botonRegistro();
+            this.frmAutenticacion = frmAutenticacion;
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -26,9 +28,10 @@ namespace CpMusica
 
         }
 
+        
         private void botonRegistro()
         {
-
+            
             btnRegistro.Visible = true;
         }
 
@@ -75,7 +78,7 @@ namespace CpMusica
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            new FrmPrincipal().ShowDialog();
+            //new FrmPrincipal().ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,6 +86,14 @@ namespace CpMusica
             new FrmArticulo().ShowDialog();
         }
 
-       
+        private void btnCategoria_Click(object sender, EventArgs e)
+        {
+            new FrmCategoria().ShowDialog();
+        }
+
+        private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmAutenticacion.Visible = true;
+        }
     }
 }

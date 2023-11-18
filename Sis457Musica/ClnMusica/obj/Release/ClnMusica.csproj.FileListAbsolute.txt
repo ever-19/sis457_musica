@@ -1,0 +1,15 @@
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\ClnMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\ClnMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\CadMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\EntityFramework.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\EntityFramework.SqlServer.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\CadMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\CadMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\EntityFramework.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Release\EntityFramework.SqlServer.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Release\ClnMusica.csproj.AssemblyReference.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Release\ClnMusica.csproj.CoreCompileInputs.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Release\ClnMusica.csproj.CopyComplete
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Release\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Release\ClnMusica.pdb

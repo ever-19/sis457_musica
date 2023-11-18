@@ -145,7 +145,7 @@ namespace CpMusica
                 cliente.primerApellido = txtPrimerApellido.Text.Trim(); ;
                 cliente.segundoApellido = txtSegundoApellido.Text.Trim(); ;
                 cliente.direccion = txtDireccion.Text.Trim(); ;
-                cliente.usuarioRegistro = "ever";//Util.usuario.usuario1;
+                cliente.usuarioRegistro = Util.usuario.usuario1;
 
                 if (esNuevo)
                 {

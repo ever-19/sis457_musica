@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuario));
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.txtParametro = new System.Windows.Forms.TextBox();
@@ -40,6 +39,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.cbxCedulaIdentidad = new System.Windows.Forms.ComboBox();
             this.cbxRol = new System.Windows.Forms.ComboBox();
             this.lblRol = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -52,7 +52,6 @@
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.cbxCedulaIdentidad = new System.Windows.Forms.ComboBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -193,6 +192,17 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos de Usuario";
             // 
+            // cbxCedulaIdentidad
+            // 
+            this.cbxCedulaIdentidad.FormattingEnabled = true;
+            this.cbxCedulaIdentidad.Items.AddRange(new object[] {
+            "Administrador",
+            "Vendedor"});
+            this.cbxCedulaIdentidad.Location = new System.Drawing.Point(89, 30);
+            this.cbxCedulaIdentidad.Name = "cbxCedulaIdentidad";
+            this.cbxCedulaIdentidad.Size = new System.Drawing.Size(184, 21);
+            this.cbxCedulaIdentidad.TabIndex = 32;
+            // 
             // cbxRol
             // 
             this.cbxRol.FormattingEnabled = true;
@@ -305,22 +315,11 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
-            // cbxCedulaIdentidad
-            // 
-            this.cbxCedulaIdentidad.FormattingEnabled = true;
-            this.cbxCedulaIdentidad.Items.AddRange(new object[] {
-            "Administrador",
-            "Vendedor"});
-            this.cbxCedulaIdentidad.Location = new System.Drawing.Point(89, 30);
-            this.cbxCedulaIdentidad.Name = "cbxCedulaIdentidad";
-            this.cbxCedulaIdentidad.Size = new System.Drawing.Size(184, 21);
-            this.cbxCedulaIdentidad.TabIndex = 32;
-            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::CpMusica.Properties.Resources.fondo11;
             this.ClientSize = new System.Drawing.Size(800, 440);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.gbxDatos);

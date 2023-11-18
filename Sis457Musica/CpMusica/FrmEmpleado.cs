@@ -214,6 +214,9 @@ namespace CpMusica
             }
         }
 
-        
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

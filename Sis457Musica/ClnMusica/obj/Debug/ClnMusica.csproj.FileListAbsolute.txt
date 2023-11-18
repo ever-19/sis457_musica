@@ -148,3 +148,33 @@ E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial)\Sis457Musica\ClnMusica\
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial)\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.CopyComplete
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial)\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.dll
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial)\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.SqlServer.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.SqlServer.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.AssemblyReference.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.CoreCompileInputs.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.CopyComplete
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\ClnMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.SqlServer.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.pdb
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\CadMusica.dll.config
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\bin\Debug\EntityFramework.SqlServer.xml
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.AssemblyReference.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.CoreCompileInputs.cache
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.csproj.CopyComplete
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.dll
+E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\ClnMusica\obj\Debug\ClnMusica.pdb

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleado));
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.txtParametro = new System.Windows.Forms.TextBox();
@@ -385,6 +384,7 @@
             this.txtFecha.Size = new System.Drawing.Size(152, 21);
             this.txtFecha.TabIndex = 10;
             this.txtFecha.Text = "dd/mm/aaaa";
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // lblBusqueda
             // 
@@ -446,7 +446,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::CpMusica.Properties.Resources.fondo11;
             this.ClientSize = new System.Drawing.Size(832, 548);
             this.Controls.Add(this.lblBusqueda);
             this.Controls.Add(this.btnBuscar);

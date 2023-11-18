@@ -28,6 +28,8 @@ namespace ClnMusica
                 existente.precioUnitario = ventadetalle.precioUnitario;
                 existente.precioTotal = ventadetalle.precioTotal;
                 existente.tipoPago = ventadetalle.tipoPago;
+                existente.idVenta = ventadetalle.idVenta;
+                existente.idArticulo = ventadetalle.idArticulo;
                 existente.usuarioRegistro = ventadetalle.usuarioRegistro;
                 return context.SaveChanges();
             }

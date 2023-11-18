@@ -32,14 +32,13 @@ namespace CpMusica
         private void botonRegistro()
         {
             
-            btnRegistro.Visible = true;
+            btnRegistro.Visible = false;
         }
 
         private void hideSubMenu()
         {
             pnlSubMenuRegistro.Visible = false;
-           // panelPlaylistSubMenu.Visible = false;
-            //panelToolsSubMenu.Visible = false;
+
         }
 
         private void showSubMenu(Panel subMenu)
@@ -95,5 +94,22 @@ namespace CpMusica
         {
             frmAutenticacion.Visible = true;
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            new FrmCliente().ShowDialog();
+        }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            new FrmVenta().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new FrmVentaDetalle().ShowDialog();
+        }
+
+       
     }
 }

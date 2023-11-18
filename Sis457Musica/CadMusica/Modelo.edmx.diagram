@@ -5,17 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="5cbb47aca9d0469e83fd36ebfd7f6f25" Name="Diagram1">
-        <EntityTypeShape EntityType="LabMusicaModel.Articulo" Width="1.5" PointX="9.625" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabMusicaModel.Categoria" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabMusicaModel.Empleado" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabMusicaModel.Usuario" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <AssociationConnector Association="LabMusicaModel.fk_Empleado_Categoria" ManuallyRouted="false" />
-        <AssociationConnector Association="LabMusicaModel.fk_Usuario_Empleado" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="LabMusicaModel.Cliente" Width="1.5" PointX="2.75" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabMusicaModel.Venta" Width="1.5" PointX="5.375" PointY="4.625" />
-        <EntityTypeShape EntityType="LabMusicaModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="4.5" />
+        <EntityTypeShape EntityType="LabMusicaModel.Articulo" Width="1.5" PointX="5.25" PointY="8.875" />
+        <EntityTypeShape EntityType="LabMusicaModel.Categoria" Width="1.5" PointX="3" PointY="9.625" />
+        <EntityTypeShape EntityType="LabMusicaModel.Cliente" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="LabMusicaModel.Empleado" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="LabMusicaModel.Usuario" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="LabMusicaModel.Venta" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="LabMusicaModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="1" />
+        <AssociationConnector Association="LabMusicaModel.fk_Empleado_Categoria" />
         <AssociationConnector Association="LabMusicaModel.fk_VentaDetalle_Articulo" />
         <AssociationConnector Association="LabMusicaModel.fk_Venta_Cliente" />
+        <AssociationConnector Association="LabMusicaModel.fk_Usuario_Empleado" />
         <AssociationConnector Association="LabMusicaModel.fk_Venta_Usuario" />
         <AssociationConnector Association="LabMusicaModel.fk_VentaDetalle_Venta" />
       </Diagram>

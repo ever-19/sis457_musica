@@ -34,30 +34,30 @@
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
             this.pnlAcciones = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.txtCedulaIdentidad = new System.Windows.Forms.TextBox();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.lblSegundoApellido = new System.Windows.Forms.Label();
             this.lblPrimerAoellido = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCedulaIdentidad = new System.Windows.Forms.Label();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtCedulaIdentidad = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.erpCedulaIdentidad = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpPrimerApellido = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpSegundoApellido = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDireccion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -71,13 +71,14 @@
             // 
             // gbxLista
             // 
+            this.gbxLista.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.gbxLista.Controls.Add(this.dgvLista);
             this.gbxLista.Location = new System.Drawing.Point(5, 97);
             this.gbxLista.Name = "gbxLista";
             this.gbxLista.Size = new System.Drawing.Size(790, 159);
             this.gbxLista.TabIndex = 19;
             this.gbxLista.TabStop = false;
-            this.gbxLista.Text = "Lista de Articulos";
+            this.gbxLista.Text = "Lista de Clientes";
             // 
             // dgvLista
             // 
@@ -124,107 +125,6 @@
             this.pnlAcciones.Name = "pnlAcciones";
             this.pnlAcciones.Size = new System.Drawing.Size(789, 48);
             this.pnlAcciones.TabIndex = 20;
-            // 
-            // gbxDatos
-            // 
-            this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
-            this.gbxDatos.Controls.Add(this.txtPrimerApellido);
-            this.gbxDatos.Controls.Add(this.txtDireccion);
-            this.gbxDatos.Controls.Add(this.lblDireccion);
-            this.gbxDatos.Controls.Add(this.txtCedulaIdentidad);
-            this.gbxDatos.Controls.Add(this.txtSegundoApellido);
-            this.gbxDatos.Controls.Add(this.lblSegundoApellido);
-            this.gbxDatos.Controls.Add(this.lblPrimerAoellido);
-            this.gbxDatos.Controls.Add(this.txtNombre);
-            this.gbxDatos.Controls.Add(this.lblNombre);
-            this.gbxDatos.Controls.Add(this.lblCedulaIdentidad);
-            this.gbxDatos.Controls.Add(this.btnCancelar);
-            this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.ForeColor = System.Drawing.Color.White;
-            this.gbxDatos.Location = new System.Drawing.Point(5, 316);
-            this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(790, 115);
-            this.gbxDatos.TabIndex = 21;
-            this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "Datos del Artículo";
-            // 
-            // txtSegundoApellido
-            // 
-            this.txtSegundoApellido.Location = new System.Drawing.Point(449, 19);
-            this.txtSegundoApellido.MaxLength = 250;
-            this.txtSegundoApellido.Name = "txtSegundoApellido";
-            this.txtSegundoApellido.Size = new System.Drawing.Size(139, 20);
-            this.txtSegundoApellido.TabIndex = 25;
-            // 
-            // lblSegundoApellido
-            // 
-            this.lblSegundoApellido.AutoSize = true;
-            this.lblSegundoApellido.Location = new System.Drawing.Point(350, 22);
-            this.lblSegundoApellido.Name = "lblSegundoApellido";
-            this.lblSegundoApellido.Size = new System.Drawing.Size(93, 13);
-            this.lblSegundoApellido.TabIndex = 22;
-            this.lblSegundoApellido.Text = "Segundo Apellido:";
-            // 
-            // lblPrimerAoellido
-            // 
-            this.lblPrimerAoellido.AutoSize = true;
-            this.lblPrimerAoellido.Location = new System.Drawing.Point(11, 80);
-            this.lblPrimerAoellido.Name = "lblPrimerAoellido";
-            this.lblPrimerAoellido.Size = new System.Drawing.Size(79, 13);
-            this.lblPrimerAoellido.TabIndex = 16;
-            this.lblPrimerAoellido.Text = "Primer Apellido:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 47);
-            this.txtNombre.MaxLength = 250;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(184, 20);
-            this.txtNombre.TabIndex = 15;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(11, 50);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 14;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblCedulaIdentidad
-            // 
-            this.lblCedulaIdentidad.AutoSize = true;
-            this.lblCedulaIdentidad.Location = new System.Drawing.Point(11, 22);
-            this.lblCedulaIdentidad.Name = "lblCedulaIdentidad";
-            this.lblCedulaIdentidad.Size = new System.Drawing.Size(20, 13);
-            this.lblCedulaIdentidad.TabIndex = 8;
-            this.lblCedulaIdentidad.Text = "CI:";
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(6, 20);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(788, 28);
-            this.lblTitulo.TabIndex = 15;
-            this.lblTitulo.Text = "Clientes";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Image = global::CpMusica.Properties.Resources.search;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(704, 57);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(91, 42);
-            this.btnBuscar.TabIndex = 18;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_2);
             // 
             // btnCerrar
             // 
@@ -280,6 +180,114 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // gbxDatos
+            // 
+            this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.txtPrimerApellido);
+            this.gbxDatos.Controls.Add(this.txtDireccion);
+            this.gbxDatos.Controls.Add(this.lblDireccion);
+            this.gbxDatos.Controls.Add(this.txtCedulaIdentidad);
+            this.gbxDatos.Controls.Add(this.txtSegundoApellido);
+            this.gbxDatos.Controls.Add(this.lblSegundoApellido);
+            this.gbxDatos.Controls.Add(this.lblPrimerAoellido);
+            this.gbxDatos.Controls.Add(this.txtNombre);
+            this.gbxDatos.Controls.Add(this.lblNombre);
+            this.gbxDatos.Controls.Add(this.lblCedulaIdentidad);
+            this.gbxDatos.Controls.Add(this.btnCancelar);
+            this.gbxDatos.Controls.Add(this.btnGuardar);
+            this.gbxDatos.ForeColor = System.Drawing.Color.White;
+            this.gbxDatos.Location = new System.Drawing.Point(5, 316);
+            this.gbxDatos.Name = "gbxDatos";
+            this.gbxDatos.Size = new System.Drawing.Size(790, 115);
+            this.gbxDatos.TabIndex = 21;
+            this.gbxDatos.TabStop = false;
+            this.gbxDatos.Text = "Datos del Artículo";
+            // 
+            // txtPrimerApellido
+            // 
+            this.txtPrimerApellido.Location = new System.Drawing.Point(140, 77);
+            this.txtPrimerApellido.MaxLength = 250;
+            this.txtPrimerApellido.Name = "txtPrimerApellido";
+            this.txtPrimerApellido.Size = new System.Drawing.Size(184, 20);
+            this.txtPrimerApellido.TabIndex = 29;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(449, 47);
+            this.txtDireccion.MaxLength = 250;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(139, 20);
+            this.txtDireccion.TabIndex = 28;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(350, 50);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(55, 13);
+            this.lblDireccion.TabIndex = 27;
+            this.lblDireccion.Text = "Dirección:";
+            // 
+            // txtCedulaIdentidad
+            // 
+            this.txtCedulaIdentidad.Location = new System.Drawing.Point(140, 18);
+            this.txtCedulaIdentidad.MaxLength = 250;
+            this.txtCedulaIdentidad.Name = "txtCedulaIdentidad";
+            this.txtCedulaIdentidad.Size = new System.Drawing.Size(184, 20);
+            this.txtCedulaIdentidad.TabIndex = 26;
+            // 
+            // txtSegundoApellido
+            // 
+            this.txtSegundoApellido.Location = new System.Drawing.Point(449, 19);
+            this.txtSegundoApellido.MaxLength = 250;
+            this.txtSegundoApellido.Name = "txtSegundoApellido";
+            this.txtSegundoApellido.Size = new System.Drawing.Size(139, 20);
+            this.txtSegundoApellido.TabIndex = 25;
+            // 
+            // lblSegundoApellido
+            // 
+            this.lblSegundoApellido.AutoSize = true;
+            this.lblSegundoApellido.Location = new System.Drawing.Point(350, 22);
+            this.lblSegundoApellido.Name = "lblSegundoApellido";
+            this.lblSegundoApellido.Size = new System.Drawing.Size(93, 13);
+            this.lblSegundoApellido.TabIndex = 22;
+            this.lblSegundoApellido.Text = "Segundo Apellido:";
+            // 
+            // lblPrimerAoellido
+            // 
+            this.lblPrimerAoellido.AutoSize = true;
+            this.lblPrimerAoellido.Location = new System.Drawing.Point(11, 80);
+            this.lblPrimerAoellido.Name = "lblPrimerAoellido";
+            this.lblPrimerAoellido.Size = new System.Drawing.Size(79, 13);
+            this.lblPrimerAoellido.TabIndex = 16;
+            this.lblPrimerAoellido.Text = "Primer Apellido:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(140, 47);
+            this.txtNombre.MaxLength = 250;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(184, 20);
+            this.txtNombre.TabIndex = 15;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(11, 50);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 14;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblCedulaIdentidad
+            // 
+            this.lblCedulaIdentidad.AutoSize = true;
+            this.lblCedulaIdentidad.Location = new System.Drawing.Point(11, 22);
+            this.lblCedulaIdentidad.Name = "lblCedulaIdentidad";
+            this.lblCedulaIdentidad.Size = new System.Drawing.Size(20, 13);
+            this.lblCedulaIdentidad.TabIndex = 8;
+            this.lblCedulaIdentidad.Text = "CI:";
+            // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -310,38 +318,18 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // txtCedulaIdentidad
+            // lblTitulo
             // 
-            this.txtCedulaIdentidad.Location = new System.Drawing.Point(140, 18);
-            this.txtCedulaIdentidad.MaxLength = 250;
-            this.txtCedulaIdentidad.Name = "txtCedulaIdentidad";
-            this.txtCedulaIdentidad.Size = new System.Drawing.Size(184, 20);
-            this.txtCedulaIdentidad.TabIndex = 26;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(449, 47);
-            this.txtDireccion.MaxLength = 250;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(139, 20);
-            this.txtDireccion.TabIndex = 28;
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(350, 50);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(55, 13);
-            this.lblDireccion.TabIndex = 27;
-            this.lblDireccion.Text = "Dirección:";
-            // 
-            // txtPrimerApellido
-            // 
-            this.txtPrimerApellido.Location = new System.Drawing.Point(140, 77);
-            this.txtPrimerApellido.MaxLength = 250;
-            this.txtPrimerApellido.Name = "txtPrimerApellido";
-            this.txtPrimerApellido.Size = new System.Drawing.Size(184, 20);
-            this.txtPrimerApellido.TabIndex = 29;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(6, 20);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(788, 28);
+            this.lblTitulo.TabIndex = 15;
+            this.lblTitulo.Text = "Clientes";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // erpCedulaIdentidad
             // 
@@ -363,11 +351,25 @@
             // 
             this.erpDireccion.ContainerControl = this;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = global::CpMusica.Properties.Resources.search;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(704, 57);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(91, 42);
+            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_2);
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::CpMusica.Properties.Resources.fondo11;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.btnBuscar);
@@ -407,8 +409,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox gbxDatos;
-        private System.Windows.Forms.TextBox txtSegundoApellido;
-        private System.Windows.Forms.Label lblSegundoApellido;
         private System.Windows.Forms.Label lblPrimerAoellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
@@ -417,13 +417,15 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.TextBox txtCedulaIdentidad;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.ErrorProvider erpCedulaIdentidad;
         private System.Windows.Forms.ErrorProvider erpNombre;
         private System.Windows.Forms.ErrorProvider erpPrimerApellido;
         private System.Windows.Forms.ErrorProvider erpSegundoApellido;
         private System.Windows.Forms.ErrorProvider erpDireccion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.TextBox txtSegundoApellido;
+        private System.Windows.Forms.Label lblSegundoApellido;
     }
 }

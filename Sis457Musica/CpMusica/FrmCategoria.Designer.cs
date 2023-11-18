@@ -82,7 +82,7 @@
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(788, 28);
             this.lblTitulo.TabIndex = 22;
-            this.lblTitulo.Text = "Codigo de Acceso para Registros del Personal";
+            this.lblTitulo.Text = "Categoría de Artículos";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gbxLista
@@ -259,6 +259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = global::CpMusica.Properties.Resources.fondo11;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblBusqueda);

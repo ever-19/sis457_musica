@@ -1,103 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="LabMusicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Articulo">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="codigo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="unidadMedida" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="cantidadExistente" Type="Int32" Nullable="false" />
-    <Property Name="marca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="idCategoria" Type="Int32" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Categoria" Relationship="Self.fk_Empleado_Categoria" FromRole="Articulo" ToRole="Categoria" />
-    <NavigationProperty Name="VentaDetalle" Relationship="LabMusicaModel.fk_VentaDetalle_Articulo" FromRole="Articulo" ToRole="VentaDetalle" />
-  </EntityType>
-  <EntityType Name="Categoria">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Articulo" Relationship="Self.fk_Empleado_Categoria" FromRole="Categoria" ToRole="Articulo" />
-  </EntityType>
-  <EntityType Name="Empleado">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="cedulaIdentidad" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="primerApellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="segundoApellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="fechaContrato" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="celular" Type="Int64" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Usuario" Relationship="Self.fk_Usuario_Empleado" FromRole="Empleado" ToRole="Usuario" />
-  </EntityType>
-  <EntityType Name="Usuario">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="idEmpleado" Type="Int32" Nullable="false" />
-    <Property Name="usuario1" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="clave" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="rol" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Empleado" Relationship="Self.fk_Usuario_Empleado" FromRole="Usuario" ToRole="Empleado" />
-    <NavigationProperty Name="Venta" Relationship="LabMusicaModel.fk_Venta_Usuario" FromRole="Usuario" ToRole="Venta" />
-  </EntityType>
-  <Association Name="fk_Empleado_Categoria">
-    <End Role="Categoria" Type="Self.Categoria" Multiplicity="1" />
-    <End Role="Articulo" Type="Self.Articulo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Categoria">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Articulo">
-        <PropertyRef Name="idCategoria" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_Usuario_Empleado">
-    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Empleado">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Usuario">
-        <PropertyRef Name="idEmpleado" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="LabMusicaEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Articulo" EntityType="Self.Articulo" />
-    <EntitySet Name="Categoria" EntityType="Self.Categoria" />
-    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
-    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
-    <AssociationSet Name="fk_Empleado_Categoria" Association="Self.fk_Empleado_Categoria">
-      <End Role="Categoria" EntitySet="Categoria" />
-      <End Role="Articulo" EntitySet="Articulo" />
-    </AssociationSet>
-    <AssociationSet Name="fk_Usuario_Empleado" Association="Self.fk_Usuario_Empleado">
-      <End Role="Empleado" EntitySet="Empleado" />
-      <End Role="Usuario" EntitySet="Usuario" />
-    </AssociationSet>
     <FunctionImport Name="paCategoriaListar" ReturnType="Collection(LabMusicaModel.paCategoriaListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
@@ -110,9 +13,20 @@
     <FunctionImport Name="paUsuarioListar" ReturnType="Collection(LabMusicaModel.paUsuarioListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="paClienteListar" ReturnType="Collection(LabMusicaModel.paClienteListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="Articulo" EntityType="LabMusicaModel.Articulo" />
+    <EntitySet Name="Categoria" EntityType="LabMusicaModel.Categoria" />
     <EntitySet Name="Cliente" EntityType="LabMusicaModel.Cliente" />
+    <EntitySet Name="Empleado" EntityType="LabMusicaModel.Empleado" />
+    <EntitySet Name="Usuario" EntityType="LabMusicaModel.Usuario" />
     <EntitySet Name="Venta" EntityType="LabMusicaModel.Venta" />
     <EntitySet Name="VentaDetalle" EntityType="LabMusicaModel.VentaDetalle" />
+    <AssociationSet Name="fk_Empleado_Categoria" Association="LabMusicaModel.fk_Empleado_Categoria">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Articulo" EntitySet="Articulo" />
+    </AssociationSet>
     <AssociationSet Name="fk_VentaDetalle_Articulo" Association="LabMusicaModel.fk_VentaDetalle_Articulo">
       <End Role="Articulo" EntitySet="Articulo" />
       <End Role="VentaDetalle" EntitySet="VentaDetalle" />
@@ -120,6 +34,10 @@
     <AssociationSet Name="fk_Venta_Cliente" Association="LabMusicaModel.fk_Venta_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Usuario_Empleado" Association="LabMusicaModel.fk_Usuario_Empleado">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
     <AssociationSet Name="fk_Venta_Usuario" Association="LabMusicaModel.fk_Venta_Usuario">
       <End Role="Usuario" EntitySet="Usuario" />
@@ -129,13 +47,10 @@
       <End Role="Venta" EntitySet="Venta" />
       <End Role="VentaDetalle" EntitySet="VentaDetalle" />
     </AssociationSet>
-    <FunctionImport Name="paClienteListar" ReturnType="Collection(LabMusicaModel.paClienteListar_Result)">
+    <FunctionImport Name="paVentaListar" ReturnType="Collection(LabMusicaModel.paVentaListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="paVentaDetalleListar" ReturnType="Collection(LabMusicaModel.paVentaDetalleListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="paVentaListar" ReturnType="Collection(LabMusicaModel.paVentaListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
@@ -184,6 +99,46 @@
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />
   </ComplexType>
+  <ComplexType Name="paClienteListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="primerApellido" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="segundoApellido" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="direccion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="unidadMedida" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="cantidadExistente" Type="Int32" Nullable="false" />
+    <Property Name="marca" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="idCategoria" Type="Int32" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Categoria" Relationship="LabMusicaModel.fk_Empleado_Categoria" FromRole="Articulo" ToRole="Categoria" />
+    <NavigationProperty Name="VentaDetalle" Relationship="LabMusicaModel.fk_VentaDetalle_Articulo" FromRole="Articulo" ToRole="VentaDetalle" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Articulo" Relationship="LabMusicaModel.fk_Empleado_Categoria" FromRole="Categoria" ToRole="Articulo" />
+  </EntityType>
   <EntityType Name="Cliente">
     <Key>
       <PropertyRef Name="id" />
@@ -199,12 +154,44 @@
     <Property Name="estado" Type="Int16" Nullable="false" />
     <NavigationProperty Name="Venta" Relationship="LabMusicaModel.fk_Venta_Cliente" FromRole="Cliente" ToRole="Venta" />
   </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cedulaIdentidad" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="primerApellido" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="segundoApellido" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="fechaContrato" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="celular" Type="Int64" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="LabMusicaModel.fk_Usuario_Empleado" FromRole="Empleado" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpleado" Type="Int32" Nullable="false" />
+    <Property Name="usuario1" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="rol" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="LabMusicaModel.fk_Usuario_Empleado" FromRole="Usuario" ToRole="Empleado" />
+    <NavigationProperty Name="Venta" Relationship="LabMusicaModel.fk_Venta_Usuario" FromRole="Usuario" ToRole="Venta" />
+  </EntityType>
   <EntityType Name="Venta">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="fecha" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="idUsuario" Type="Int32" Nullable="false" />
     <Property Name="idCliente" Type="Int32" Nullable="false" />
     <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -231,6 +218,18 @@
     <NavigationProperty Name="Articulo" Relationship="LabMusicaModel.fk_VentaDetalle_Articulo" FromRole="VentaDetalle" ToRole="Articulo" />
     <NavigationProperty Name="Venta" Relationship="LabMusicaModel.fk_VentaDetalle_Venta" FromRole="VentaDetalle" ToRole="Venta" />
   </EntityType>
+  <Association Name="fk_Empleado_Categoria">
+    <End Type="LabMusicaModel.Categoria" Role="Categoria" Multiplicity="1" />
+    <End Type="LabMusicaModel.Articulo" Role="Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_VentaDetalle_Articulo">
     <End Type="LabMusicaModel.Articulo" Role="Articulo" Multiplicity="1" />
     <End Type="LabMusicaModel.VentaDetalle" Role="VentaDetalle" Multiplicity="*" />
@@ -252,6 +251,18 @@
       </Principal>
       <Dependent Role="Venta">
         <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Usuario_Empleado">
+    <End Type="LabMusicaModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="LabMusicaModel.Usuario" Role="Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idEmpleado" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -279,13 +290,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <ComplexType Name="paClienteListar_Result">
+  <ComplexType Name="paVentaListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="20" />
-    <Property Type="String" Name="primerApellido" Nullable="false" MaxLength="20" />
-    <Property Type="String" Name="segundoApellido" Nullable="false" MaxLength="20" />
-    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="15" />
-    <Property Type="String" Name="direccion" Nullable="false" MaxLength="60" />
+    <Property Type="Int32" Name="idCliente" Nullable="false" />
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="DateTime" Name="fecha" Nullable="false" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />
@@ -298,15 +307,7 @@
     <Property Type="Int32" Name="cantidad" Nullable="false" />
     <Property Type="Double" Name="precioUnitario" Nullable="false" />
     <Property Type="Double" Name="precioTotal" Nullable="false" />
-    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
-    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
-    <Property Type="Int16" Name="estado" Nullable="false" />
-  </ComplexType>
-  <ComplexType Name="paVentaListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="Int32" Name="idCliente" Nullable="false" />
-    <Property Type="Int32" Name="idUsuario" Nullable="false" />
-    <Property Type="String" Name="fecha" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="tipoPago" Nullable="false" MaxLength="15" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />

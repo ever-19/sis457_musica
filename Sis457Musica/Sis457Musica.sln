@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpMusica", "CpMusica\CpMusi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadMusica", "CadMusica\CadMusica.csproj", "{C9E2F820-F272-449B-AE24-72D51CAAEE7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMusica", "WebMusica\WebMusica.csproj", "{DC1532B3-BEEB-4C06-8C9E-0020240A65B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C9E2F820-F272-449B-AE24-72D51CAAEE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E2F820-F272-449B-AE24-72D51CAAEE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E2F820-F272-449B-AE24-72D51CAAEE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1532B3-BEEB-4C06-8C9E-0020240A65B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1532B3-BEEB-4C06-8C9E-0020240A65B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1532B3-BEEB-4C06-8C9E-0020240A65B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1532B3-BEEB-4C06-8C9E-0020240A65B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

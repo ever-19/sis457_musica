@@ -5,12 +5,336 @@
       "PackagePath": "staticwebassets\\WebMusica.bundle.scp.css"
     },
     {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\css\\owl.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\css\\templatemo-sixteen.css",
+      "PackagePath": "staticwebassets\\assets\\css\\templatemo-sixteen.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\about-heading.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about-heading.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\client-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-01.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\contact-heading.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\contact-heading.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\feature-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feature-image.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\more-info.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\more-info.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_01.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_02.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_03.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_04.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_05.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_05.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\product_06.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product_06.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\products-heading.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products-heading.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\services-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\services-bg.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\slide_01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slide_01.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\slide_02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slide_02.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\slide_03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slide_03.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_01.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_02.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_02.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_03.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_04.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_05.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_05.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\team_06.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team_06.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\assets\\js\\accordions.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\assets\\js\\isotope.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\js\\owl.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
+    },
+    {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\css\\templatemo-pod-talk.css",
+      "PackagePath": "staticwebassets\\css\\templatemo-pod-talk.css"
+    },
+    {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\app-store.png",
+      "PackagePath": "staticwebassets\\images\\app-store.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\medium-shot-young-people-recording-podcast.jpg",
+      "PackagePath": "staticwebassets\\images\\medium-shot-young-people-recording-podcast.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\play-store.png",
+      "PackagePath": "staticwebassets\\images\\play-store.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\pod-talk-logo.png",
+      "PackagePath": "staticwebassets\\images\\pod-talk-logo.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\podcast\\11683425_4790593.jpg",
+      "PackagePath": "staticwebassets\\images\\podcast\\11683425_4790593.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\podcast\\12577967_02.jpg",
+      "PackagePath": "staticwebassets\\images\\podcast\\12577967_02.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\podcast\\27376480_7326766.jpg",
+      "PackagePath": "staticwebassets\\images\\podcast\\27376480_7326766.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\podcast\\27670664_7369753.jpg",
+      "PackagePath": "staticwebassets\\images\\podcast\\27670664_7369753.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\BAJO-IBANEZ.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\BAJO-IBANEZ.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\GUITARRA-GODIN.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\GUITARRA-GODIN.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\KORG.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\KORG.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\RCF.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\RCF.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\SABIAN.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\SABIAN.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\SAMPLE-ROLAND.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\SAMPLE-ROLAND.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\SHURE.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\SHURE.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\profile\\TAMA.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\TAMA.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\templatemo-wave-banner.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo-wave-banner.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\templatemo-wave-footer.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo-wave-footer.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\templatemo-wave-header.jpg",
+      "PackagePath": "staticwebassets\\images\\templatemo-wave-header.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\topics\\delicious-meal-with-sambal-arrangement.jpg",
+      "PackagePath": "staticwebassets\\images\\topics\\delicious-meal-with-sambal-arrangement.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\topics\\physician-consulting-his-patient-clinic.jpg",
+      "PackagePath": "staticwebassets\\images\\topics\\physician-consulting-his-patient-clinic.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\topics\\repairman-doing-air-conditioner-service.jpg",
+      "PackagePath": "staticwebassets\\images\\topics\\repairman-doing-air-conditioner-service.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\topics\\woman-practicing-yoga-mat-home.jpg",
+      "PackagePath": "staticwebassets\\images\\topics\\woman-practicing-yoga-mat-home.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\verified.png",
+      "PackagePath": "staticwebassets\\images\\verified.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
     },
     {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\js\\site.js",
@@ -243,6 +567,78 @@
     {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebMusica.Microsoft.AspNetCore.StaticWebAssets.props",

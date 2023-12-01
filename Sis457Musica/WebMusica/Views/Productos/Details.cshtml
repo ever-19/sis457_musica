@@ -1,0 +1,72 @@
+﻿@model WebMusica.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner header-text">
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <h4>DETALLES PRODUCTO</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-2">Código</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Codigo)
+                    </dd>
+                    <dt class="col-sm-2">Nombre</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Nombre)
+                    </dd>
+                    <dt class="col-sm-2">Descripción</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Descripcion)
+                    </dd>
+                    <dt class="col-sm-2">Precio</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Precio)
+                    </dd>
+                    <dt class="col-sm-2">Cantidad Existente</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.CantidadExistente)
+                    </dd>
+                    <dt class="col-sm-2">Url Imagen</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.UrlImagen)
+                    </dd>
+                    <dt class="col-sm-2">Usuario Registro</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.UsuarioRegistro)
+                    </dd>
+                    <dt class="col-sm-2">Fecha Registro</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.FechaRegistro)
+                    </dd>
+                    <dt class="col-sm-2">Estado</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Estado)
+                    </dd>
+                    <dt class="col-sm-2">Categoria</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.IdCategoriaNavigation.Nombre)
+                    </dd>
+                    <dt class="col-sm-2">Marca</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.IdMarcaNavigation.Nombre)
+                    </dd>
+                    <dt class="col-sm-2">Unidad Medida</dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.IdUnidadMedidaNavigation.Nombre)
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+                <a asp-action="Index">VOLVER</a>
+            </div>
+
+        </div>
+    </section>
+</div>

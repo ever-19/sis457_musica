@@ -450,3 +450,44 @@ E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457M
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.xml
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.SqlServer.xml
 E:\SIS457_MUSICA\sis457_musica - copia - copia (oficial) - copia - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.csproj.CopyComplete
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CpMusica.exe.config
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CpMusica.exe
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CpMusica.pdb
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.4.5.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Command.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Input.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Ribbon.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Ribbon.4.5.2.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CadMusica.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\ClnMusica.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.SqlServer.dll
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CadMusica.pdb
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\CadMusica.dll.config
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\ClnMusica.pdb
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\ClnMusica.dll.config
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.4.5.2.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Command.2.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Input.2.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Ribbon.2.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\C1.Win.C1Ribbon.4.5.2.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\bin\Debug\EntityFramework.SqlServer.xml
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.csproj.AssemblyReference.cache
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmCategoria.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmArticulo.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmAutenticacion.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmCliente.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmEmpleado.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmPrincipal.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmUsuario.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmVenta.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.FrmVentaDetalle.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.Properties.Resources.resources
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.csproj.GenerateResource.cache
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.exe.licenses
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.csproj.CoreCompileInputs.cache
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.csproj.CopyComplete
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.exe
+E:\SIS457_MUSICA\NUEVA CARPETA EXAMEN FINAL\sis457_musica - copia\Sis457Musica\CpMusica\obj\Debug\CpMusica.pdb

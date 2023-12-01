@@ -8001,11 +8001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica - copia\\Sis457Musica\\WebMusica\\WebMusica.csproj",
+      "projectUniqueName": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\WebMusica.csproj",
       "projectName": "WebMusica",
-      "projectPath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica - copia\\Sis457Musica\\WebMusica\\WebMusica.csproj",
+      "projectPath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\WebMusica.csproj",
       "packagesPath": "C:\\Users\\EVER\\.nuget\\packages\\",
-      "outputPath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica - copia\\Sis457Musica\\WebMusica\\obj\\",
+      "outputPath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

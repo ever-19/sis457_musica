@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G8haa0NL+jWczLsm7bb/l4WaS6OSGZqyyNB6l1UmuaFciUnHULIGgnpGFyjDcnNfrXrdvxpa8drRDXATGqYDCg==",
+  "dgSpecHash": "bsLWeCl1/zx/NiGlaRNyk02gCvP9YzdyafhjS908Wu49M2BujqVrX/gE52qSaoYKbSFFPhqXgccVAHk7KA63xw==",
   "success": true,
-  "projectFilePath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica - copia\\Sis457Musica\\WebMusica\\WebMusica.csproj",
+  "projectFilePath": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\WebMusica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EVER\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\EVER\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

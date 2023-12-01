@@ -1,0 +1,55 @@
+﻿@model WebMusica.Models.VentaDetalle
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner header-text">
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <h4>CREAR VENTA DETALLE</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label class="control-label">Venta</label>
+                                <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Producto</label>
+                                <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Cantidad</label>
+                                <input asp-for="Cantidad" class="form-control" />
+                                <span asp-validation-for="Cantidad" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Total</label>
+                                <input asp-for="Total" class="form-control" />
+                                <span asp-validation-for="Total" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="CREAR" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <a asp-action="Index">VOLVER</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

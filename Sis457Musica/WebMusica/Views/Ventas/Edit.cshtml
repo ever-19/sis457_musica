@@ -1,0 +1,73 @@
+﻿@model WebMusica.Models.Ventum
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner header-text">
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <h4>EDITAR VENTA</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+                            <div class="form-group">
+                                <label class="control-label">Usuario</label>
+                                <select asp-for="IdUsuario" class="form-control" asp-items="ViewBag.IdUsuario"></select>
+                                <span asp-validation-for="IdUsuario" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Dirección</label>
+                                <input asp-for="Direccion" class="form-control" />
+                                <span asp-validation-for="Direccion" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Celular</label>
+                                <input asp-for="Celular" class="form-control" />
+                                <span asp-validation-for="Celular" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">País</label>
+                                <select asp-for="IdPais" class="form-control" asp-items="ViewBag.IdPais"></select>
+                                <span asp-validation-for="IdPais" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Departamento</label>
+                                <select asp-for="IdDepartamento" class="form-control" asp-items="ViewBag.IdDepartamento"></select>
+                                <span asp-validation-for="IdDepartamento" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Ciudad</label>
+                                <select asp-for="IdCiudad" class="form-control" asp-items="ViewBag.IdCiudad"></select>
+                                <span asp-validation-for="IdCiudad" class="text-danger"></span>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label class="control-label">Estado</label>
+                                <input asp-for="Estado" class="form-control" />
+                                <span asp-validation-for="Estado" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="GUARDAR" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <a asp-action="Index">VOLVER</a>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+</div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }

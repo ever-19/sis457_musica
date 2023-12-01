@@ -1,0 +1,91 @@
+﻿@model IEnumerable<WebMusica.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner header-text">
+    <section class="">
+        <div class="">
+            <div class="row">
+                <h4>LISTA DE USUARIOS</h4>
+
+
+                <a asp-action="Create" class="btn custom-btn smoothscroll mt-3">CREAR NUEVO</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>Usuario</th>
+                            <th>Clave</th>
+                            <th>Es Admin</th>
+                            <th>Usuario Registro</th>
+                            <th>Fecha Registro</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Apellidos)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Correo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Usuario1)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Clave)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EsAdmin)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UsuarioRegistro)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.FechaRegistro)
+                                </td>
+                                <td>
+                                    @(item.Estado == 1 ? "Activo" : "Inactivo")
+                                </td>
+                                <!--FUNCIONES VER EDITAR ELIMINAR-->
+                                <td>
+
+                                    <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver">
+                                        <ul>
+                                            <li><i class="fa fa-eye"></i></li>
+                                        </ul>
+                                    </a> |
+                                    <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Editar">
+                                        <ul>
+                                            <li><i class="fa fa-edit"></i></li>
+                                        </ul>
+                                    </a>
+                                    |
+                                    <a asp-action="Delete" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar">
+                                        <ul>
+                                            <li><i class="fa fa-trash"></i></li>
+                                        </ul>
+                                    </a>
+
+                                </td>
+                                <!--FUNCIONES VER EDITAR ELIMINAR-->
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>

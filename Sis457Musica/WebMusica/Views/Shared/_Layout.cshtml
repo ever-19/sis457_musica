@@ -126,19 +126,21 @@
                     <!--INICIO SESION-->
                     @if (User.Identity?.IsAuthenticated == false)
                     {
-                        <a href="Productos" class="btn  btn-success  w-51 ">
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-success w-51" style="color: wheat">
                             <ul class="btn-close-white ">
                                 <li><i class="fa fa-lock"></i> Ingresar</li>
                             </ul>
                         </a>
+                        /*<a href="Productos" class="btn  btn-success  w-51 ">
+                            <ul class="btn-close-white ">
+                                <li><i class="fa fa-lock"></i> Ingresar</li>
+                            </ul>
+                        </a>*/
                     }
                     else
                     {
-                        <a asp-controller="Account" asp-action="Login" class="btn  btn-success  w-51 ">
-                            <ul class="btn-close-white ">
-                                <li><i class="fa fa-unlock"></i> Salir</li>
-                            </ul>
-                        </a>
+                        @await Html.PartialAsync("_LogoutPartial")
+                        
                     }
 
 

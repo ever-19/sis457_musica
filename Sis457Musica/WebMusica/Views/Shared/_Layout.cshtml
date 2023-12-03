@@ -50,7 +50,12 @@
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><h2>MUSICA <em>SIS457</em></h2></a>
+                <a class="navbar-brand" href="/">
+                    <h2>
+                        <img width="60" src="~/images/logoever/LOGO.png" />
+                        MUSICA <em>SIS457</em>
+                    </h2>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,59 +77,66 @@
                         </li>
                         @if (User.Identity?.IsAuthenticated == true)
                         {
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Ventas" asp-action="Index">Ventas</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="VentaDetalles" asp-action="Index">Venta Detalle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Carritos" asp-action="Index">Carrito</a>
-                        </li>
-                        
-                        
-                        <!--INICIO MENU ADMINISTRADOR-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
 
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="UnidadMedidas" asp-action="Index">U.Medida</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Categorias" asp-action="Index">Categorías</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Marcas" asp-action="Index">Marcas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Pais" asp-action="Index">Pais</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Departamentos" asp-action="Index">Departamentos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Ciudades" asp-action="Index">Ciudades</a>
-                                </li>
+                            <!--INICIO MENU ADMINISTRADOR-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
 
-                            </ul>
-                        </li>
-                        <!--FIN MENU ADMINISTRADOR-->
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="UnidadMedidas" asp-action="Index">U.Medida</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Categorias" asp-action="Index">Categorías</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Marcas" asp-action="Index">Marcas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Pais" asp-action="Index">Pais</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Departamentos" asp-action="Index">Departamentos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Ciudades" asp-action="Index">Ciudades</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Ventas" asp-action="Index">Ventas</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="VentaDetalles" asp-action="Index">Venta Detalle</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <!-- FIN MENU ADMINISTRADOR-->
                         }
 
                     </ul>
+
+
                     <!--INICIO CARRITO-->
-                    <button class="btn btn-close-white" type="submit">
+                    <button class="btn btn-close-white">
+
                         <ul>
-                            <li><i class="fa fa-shopping-cart"></i></li>
+                            <li>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Carrito">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </li>
+
                         </ul>
                         <span class="badge bg-dark text-white ms-1 rounded-pill contador-carrito">0</span>
                     </button>
-                    <!--FIN CARRITO-->
+                    <!-- FIN CARRITO-->
                     <!--INICIO SESION-->
                     @if (User.Identity?.IsAuthenticated == false)
                     {
@@ -134,15 +146,15 @@
                             </ul>
                         </a>
                         /*<a href="Productos" class="btn  btn-success  w-51 ">
-                            <ul class="btn-close-white ">
-                                <li><i class="fa fa-lock"></i> Ingresar</li>
-                            </ul>
+                        <ul class="btn-close-white ">
+                        <li><i class="fa fa-lock"></i> Ingresar</li>
+                        </ul>
                         </a>*/
                     }
                     else
                     {
                         @await Html.PartialAsync("_LogoutPartial")
-                        
+
                     }
 
 

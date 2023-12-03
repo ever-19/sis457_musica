@@ -1,0 +1,163 @@
+﻿@model WebMusica.Models.Ventum;
+
+@{
+    ViewData["Title"] = "Carrito";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner header-text">
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="row mt-5 pt-5 p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="product-details mr-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="ml-2">Mi Carrito - Productos</h6>
+                                            <a class="btn btn-danger" asp-area="" asp-controller="Productos" asp-action="Index">VOLVER</a>
+
+                                        </div>
+                                        <hr class="mt-2 mb-2">
+                                        <div class="justify-content-start mb-2">
+                                            Tienes <span id="cantidad" class="ml-1">0</span> artículo(s) en tu carrito
+                                        </div>
+                                        <div id="productos-seleccionados">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <span class="ml-2"></span>
+                                    <a class="btn btn-success" asp-area="" asp-controller="Account" asp-action="Login">Procesar la compra</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <div class="row">
+
+                                                <div class="col-12">
+                                                    <div class="payment-info">
+                                                        <div class="d-flex justify-content-between align-items-center"><h6>Detalle de Tarjeta</h6></div>
+                                                        
+                                                        <span class="type d-block mt-3 mb-1">Tipo de tarjeta</span>
+                                                        <label class="radio"> <input type="radio" name="card" value="payment" checked> <span><img width="60" src="~/images/pago/master.png" /></span> </label>
+                                                        <label class="radio ml-2"> <input type="radio" name="card" value="payment"> <span><img width="60" src="~/images/pago/visa.png" /></span> </label>
+                                                        
+                                                        <div>
+                                                            <label class="credit-card-label mb-1 mt-2">Nombre del Titular</label>
+                                                            <input type="text" class="form-control credit-inputs" placeholder="Nombre" id="trj_nombre">
+                                                        </div>
+                                                        <div>
+                                                            <label class="credit-card-label mb-1 mt-2">Número de tarjeta</label>
+                                                            <input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000" id="trj_numero">
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label class="credit-card-label mb-1 mt-2">Vigencia</label>
+                                                                <input type="text" class="form-control credit-inputs" placeholder="12/26" id="trj_vigencia">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="credit-card-label mb-1 mt-2">CVV</label>
+                                                                <input type="text" class="form-control credit-inputs" placeholder="342" id="trj_cvv">
+                                                            </div>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <div class="d-flex justify-content-between information"><span>Total a Pagar</span><span id="Producto.Precio">Bs/. 0</span></div>
+                                                        
+                                                        <button class="btn btn-primary btn-block mt-3" type="button">Procesar Pago</button>
+                                                    </div>
+                                                    <hr class="mt-2 mb-2">
+                                                    <div class="d-flex justify-content-between align-items-center"><h6>Pagar con PayPal</h6></div>
+                                                    <label class="radio ml-2"> <input type="radio" name="card" value="payment"> <span><img width="60" src="~/images/pago/PAYPAL.png" /></span> </label>
+                                                    <a href="https://www.paypal.com/bo/signin" class="btn btn-primary btn-block mt-3">Login PayPal</a>
+                                                
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--MODAL-->
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">DATOS PARA ENVÍO</h5>
+                                
+                            </div>
+                            <div class="modal-body">
+
+
+
+                                <div class="col-md-8">
+                                    <div class="">
+                                        <div class="row">
+
+                                            <form asp-action="Create">
+                                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label">Usuario</label>
+                                                    <fieldset>
+                                                        <select asp-for="IdUsuario" class="form-control" asp-items="ViewBag.IdUsuario" placeholder="Nombre" required=""></select>
+                                                    </fieldset>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label">Dirección</label>
+                                                    <input asp-for="Direccion" class="form-control" />
+                                                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Celular</label>
+                                                    <input asp-for="Celular" class="form-control" />
+                                                    <span asp-validation-for="Celular" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">País</label>
+                                                    <select asp-for="IdPais" class="form-select" asp-items="ViewBag.IdPais"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Departamento</label>
+                                                    <select asp-for="IdDepartamento" class="form-select" asp-items="ViewBag.IdDepartamento"></select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label">Ciudad</label>
+                                                    <select asp-for="IdCiudad" class="form-select" asp-items="ViewBag.IdCiudad"></select>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-success">Confirmar Compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

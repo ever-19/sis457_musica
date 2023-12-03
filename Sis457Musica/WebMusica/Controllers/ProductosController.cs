@@ -62,7 +62,7 @@ namespace WebMusica.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Codigo,Nombre,Descripcion,Precio,CantidadExistente,UrlImagen,IdCategoria,IdMarca,IdUnidadMedida")] Producto producto)
         {
-            if (!string.IsNullOrEmpty(producto.Nombre) && producto.CantidadExistente > 0)
+            if (!string.IsNullOrEmpty(producto.Nombre) && producto.CantidadExistente > -1)
             {
                 producto.UsuarioRegistro = "SIS457";
                 producto.FechaRegistro = DateTime.Now;
@@ -108,7 +108,7 @@ namespace WebMusica.Controllers
                 return NotFound();
             }
 
-            if (!string.IsNullOrEmpty(producto.Nombre) && producto.Precio > 0 && producto.CantidadExistente > 0)
+            if (!string.IsNullOrEmpty(producto.Nombre) && producto.Precio > 0 && producto.CantidadExistente > -1)
             {
                 try
                 {

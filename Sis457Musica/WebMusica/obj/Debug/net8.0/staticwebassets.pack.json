@@ -233,8 +233,24 @@
       "PackagePath": "staticwebassets\\images\\app-store.png"
     },
     {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\logoever\\LOGO.png",
+      "PackagePath": "staticwebassets\\images\\logoever\\LOGO.png"
+    },
+    {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\medium-shot-young-people-recording-podcast.jpg",
       "PackagePath": "staticwebassets\\images\\medium-shot-young-people-recording-podcast.jpg"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\pago\\PAYPAL.png",
+      "PackagePath": "staticwebassets\\images\\pago\\PAYPAL.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\pago\\master.png",
+      "PackagePath": "staticwebassets\\images\\pago\\master.png"
+    },
+    {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\pago\\visa.png",
+      "PackagePath": "staticwebassets\\images\\pago\\visa.png"
     },
     {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\images\\play-store.png",

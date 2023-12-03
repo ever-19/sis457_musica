@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\slick.woff"
     },
     {
+      "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\TIENDA.png",
+      "PackagePath": "staticwebassets\\assets\\images\\TIENDA.png"
+    },
+    {
       "Id": "E:\\SIS457_MUSICA\\NUEVA CARPETA EXAMEN FINAL\\sis457_musica\\Sis457Musica\\WebMusica\\wwwroot\\assets\\images\\about-heading.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\about-heading.jpg"
     },

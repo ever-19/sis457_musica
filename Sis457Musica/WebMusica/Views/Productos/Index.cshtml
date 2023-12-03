@@ -42,27 +42,28 @@
                                             <span> @(item.CantidadExistente > 0 ? "Disponible" : "Agotado")</span>
 
                                         </div>
+                                        @if (User.Identity?.IsAuthenticated == true)
+                                        {
+                                            <div class=" text-lg-center ">
 
-                                        <div class=" text-lg-center ">
-
-                                            <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver">
-                                                <ul>
-                                                    <li><i class="fa fa-eye"></i></li>
-                                                </ul>
-                                            </a> |
-                                            <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Editar">
-                                                <ul>
-                                                    <li><i class="fa fa-edit"></i></li>
-                                                </ul>
-                                            </a>
-                                            |
-                                            <a asp-action="Delete" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar">
-                                                <ul>
-                                                    <li><i class="fa fa-trash"></i></li>
-                                                </ul>
-                                            </a>
-                                        </div>
-
+                                                <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver">
+                                                    <ul>
+                                                        <li><i class="fa fa-eye"></i></li>
+                                                    </ul>
+                                                </a> |
+                                                <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Editar">
+                                                    <ul>
+                                                        <li><i class="fa fa-edit"></i></li>
+                                                    </ul>
+                                                </a>
+                                                |
+                                                <a asp-action="Delete" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar">
+                                                    <ul>
+                                                        <li><i class="fa fa-trash"></i></li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
 
@@ -77,86 +78,88 @@
         </div>
     </section>
 </div>
+@if (User.Identity?.IsAuthenticated == true)
+{
+
+    <div class="banner header-text">
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <h4>LISTA PRODUCTOS</h4>
 
 
-<div class="banner header-text">
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <h4>LISTA PRODUCTOS</h4>
+                    <a asp-action="Create" class="btn custom-btn smoothscroll mt-3">CREAR NUEVO</a>
 
-
-                <a asp-action="Create" class="btn custom-btn smoothscroll mt-3">CREAR NUEVO</a>
-
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Nombre</th>
-                            <th>Descripción</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Url Imagen</th>
-                            <th>Usuario Registro</th>
-                            <th>Fecha Registro</th>
-                            <th>Estado</th>
-                            <th>Categoria</th>
-                            <th>Marca</th>
-                            <th>Unidad Medida</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
+                    <table class="table">
+                        <thead>
                             <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Codigo)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Nombre)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Descripcion)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Precio)
-                                </td>
-                                <td>
-
-                                    @Html.DisplayFor(modelItem => item.CantidadExistente)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.UrlImagen)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.UsuarioRegistro)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.FechaRegistro)
-                                </td>
-                                <td>
-                                    @(item.Estado == 1 ? "Activo" : "Inactivo")
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdMarcaNavigation.Nombre)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdUnidadMedidaNavigation.Nombre)
-                                </td>
-                                <td>
-                                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                                </td>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Url Imagen</th>
+                                <th>Usuario Registro</th>
+                                <th>Fecha Registro</th>
+                                <th>Estado</th>
+                                <th>Categoria</th>
+                                <th>Marca</th>
+                                <th>Unidad Medida</th>
+                                <th></th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Codigo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Precio)
+                                    </td>
+                                    <td>
+
+                                        @Html.DisplayFor(modelItem => item.CantidadExistente)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UrlImagen)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsuarioRegistro)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaRegistro)
+                                    </td>
+                                    <td>
+                                        @(item.Estado == 1 ? "Activo" : "Inactivo")
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdMarcaNavigation.Nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdUnidadMedidaNavigation.Nombre)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
+}

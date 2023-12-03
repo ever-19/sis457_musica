@@ -32,7 +32,9 @@ namespace WebMusica.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
+
             ViewData["ReturnUrl"] = returnUrl;
+
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError("", "Intentos de inicio de sesión no válidos.");
@@ -42,9 +44,15 @@ namespace WebMusica.Controllers
             var usuario = _context.Usuarios
                 .Where(x => x.Estado == 1 && x.Usuario1 == model.usuario &&
                     x.Clave == Util.Encrypt(model.clave)).FirstOrDefault();
+            //probando login roles
+
+            //fin login roles
+
+
+
             if (usuario != null)
             {
-                TempData["isLogged"] = true;
+                TempData["isLogged"] = false;
                 var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, usuario.Usuario1),
@@ -58,7 +66,7 @@ namespace WebMusica.Controllers
                 var authProperties = new AuthenticationProperties
                 {
                     AllowRefresh = true,
-                    ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(1),
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(15),
                     IsPersistent = model.recordarme
                 };
 
@@ -76,7 +84,9 @@ namespace WebMusica.Controllers
                 ViewBag.ReturnUrl = returnUrl;
                 ModelState.AddModelError("", "Intentos de inicio de sesión no válidos.");
                 return View(model);
-            }
+            };
+
+
         }
 
         [HttpPost]

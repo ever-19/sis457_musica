@@ -62,7 +62,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(ciudad.Nombre))
             {
-                ciudad.UsuarioRegistro = "SIS457";
+                ciudad.UsuarioRegistro = User.Identity?.Name;
                 ciudad.FechaRegistro = DateTime.Now;
                 ciudad.Estado = 1;
                 _context.Add(ciudad);
@@ -97,7 +97,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,IdPais,IdDepartamento")] Ciudad ciudad)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,IdPais,IdDepartamento,Estado")] Ciudad ciudad)
         {
             if (id != ciudad.Id)
             {
@@ -108,9 +108,8 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    ciudad.UsuarioRegistro = "SIS457";
+                    ciudad.UsuarioRegistro = User.Identity?.Name;
                     ciudad.FechaRegistro = DateTime.Now;
-                    ciudad.Estado = 1;
                     _context.Update(ciudad);
                     await _context.SaveChangesAsync();
                 }

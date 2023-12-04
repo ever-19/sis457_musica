@@ -66,7 +66,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(ventum.Direccion))
             {
-                ventum.UsuarioRegistro = "SIS457";
+                ventum.UsuarioRegistro = User.Identity?.Name;
                 ventum.FechaRegistro = DateTime.Now;
                 ventum.Estado = 1;
                 _context.Add(ventum);
@@ -116,7 +116,7 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    ventum.UsuarioRegistro = "SIS457";
+                    ventum.UsuarioRegistro = User.Identity?.Name;
                     ventum.FechaRegistro = DateTime.Now;
                     ventum.Estado = 1;
                     _context.Update(ventum);

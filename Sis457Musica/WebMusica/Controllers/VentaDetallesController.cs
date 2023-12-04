@@ -62,7 +62,7 @@ namespace WebMusica.Controllers
         {
             if (ventaDetalle.Cantidad > 0)
             {
-                ventaDetalle.UsuarioRegistro = "SIS457";
+                ventaDetalle.UsuarioRegistro = User.Identity?.Name;
                 ventaDetalle.FechaRegistro = DateTime.Now;
                 ventaDetalle.Estado = 1;
                 _context.Add(ventaDetalle);
@@ -108,7 +108,7 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    ventaDetalle.UsuarioRegistro = "SIS457";
+                    ventaDetalle.UsuarioRegistro = User.Identity?.Name;
                     ventaDetalle.FechaRegistro = DateTime.Now;
                     ventaDetalle.Estado = 1;
                     _context.Update(ventaDetalle);

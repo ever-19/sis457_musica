@@ -57,7 +57,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(marca.Nombre))
             {
-                marca.UsuarioRegistro = "SIS457";
+                marca.UsuarioRegistro = User.Identity?.Name;
                 marca.FechaRegistro = DateTime.Now;
                 marca.Estado = 1;
                 _context.Add(marca);
@@ -88,17 +88,19 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,UsuarioRegistro,FechaRegistro,Estado")] Marca marca)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Estado")] Marca marca)
         {
             if (id != marca.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(marca.Nombre))
             {
                 try
                 {
+                    marca.UsuarioRegistro = User.Identity?.Name;
+                    marca.FechaRegistro = DateTime.Now;
                     _context.Update(marca);
                     await _context.SaveChangesAsync();
                 }

@@ -104,7 +104,7 @@ namespace WebMusica.Controllers
                 try
                 {
                     usuario.Clave = Util.Encrypt("sis457");
-                    usuario.UsuarioRegistro = "SIS457";
+                    usuario.UsuarioRegistro = User.Identity?.Name;
                     usuario.FechaRegistro = DateTime.Now;
                     usuario.EsAdmin = true;
                     usuario.Estado = 1;

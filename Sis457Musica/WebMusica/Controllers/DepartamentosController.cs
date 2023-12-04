@@ -60,7 +60,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(departamento.Nombre))
             {
-                departamento.UsuarioRegistro = "SIS457";
+                departamento.UsuarioRegistro = User.Identity?.Name;
                 departamento.FechaRegistro = DateTime.Now;
                 departamento.Estado = 1;
                 _context.Add(departamento);
@@ -93,7 +93,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,IdPais,UsuarioRegistro,FechaRegistro,Estado")] Departamento departamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,IdPais,Estado")] Departamento departamento)
         {
             if (id != departamento.Id)
             {
@@ -104,9 +104,9 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    departamento.UsuarioRegistro = "SIS457";
+                    departamento.UsuarioRegistro = User.Identity?.Name;
                     departamento.FechaRegistro = DateTime.Now;
-                    departamento.Estado = 1;
+                   
                     _context.Update(departamento);
                     await _context.SaveChangesAsync();
                 }

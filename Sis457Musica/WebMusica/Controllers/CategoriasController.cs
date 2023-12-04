@@ -58,7 +58,7 @@ namespace WebMusica.Controllers
             if (!string.IsNullOrEmpty(categorium.Nombre))
 
             {
-                categorium.UsuarioRegistro = "SIS457";
+                categorium.UsuarioRegistro = User.Identity?.Name;
                 categorium.FechaRegistro = DateTime.Now;
                 categorium.Estado = 1;
                 _context.Add(categorium);
@@ -89,7 +89,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,UsuarioRegistro,FechaRegistro,Estado")] Categorium categorium)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Estado")] Categorium categorium)
         {
             if (id != categorium.Id)
             {
@@ -100,9 +100,9 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    categorium.UsuarioRegistro = "SIS457";
+                    categorium.UsuarioRegistro = User.Identity?.Name;
                     categorium.FechaRegistro = DateTime.Now;
-                    categorium.Estado = 1;
+                    
                     _context.Update(categorium);
                     await _context.SaveChangesAsync();
                 }

@@ -64,7 +64,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(producto.Nombre) && producto.CantidadExistente > -1)
             {
-                producto.UsuarioRegistro = "SIS457";
+                producto.UsuarioRegistro = User.Identity?.Name;
                 producto.FechaRegistro = DateTime.Now;
                 producto.Estado = 1;
                 _context.Add(producto);
@@ -101,7 +101,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Codigo,Nombre,Descripcion,Precio,CantidadExistente,UrlImagen,IdCategoria,IdMarca,IdUnidadMedida")] Producto producto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Codigo,Nombre,Descripcion,Precio,CantidadExistente,UrlImagen,IdCategoria,IdMarca,IdUnidadMedida,Estado")] Producto producto)
         {
             if (id != producto.Id)
             {
@@ -112,9 +112,9 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    producto.UsuarioRegistro = "SIS457";
+                    producto.UsuarioRegistro = User.Identity?.Name;
                     producto.FechaRegistro = DateTime.Now;
-                    producto.Estado = 1;
+                   
                     _context.Update(producto);
                     await _context.SaveChangesAsync();
                 }

@@ -57,7 +57,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(unidadMedidum.Nombre))
             {
-                unidadMedidum.UsuarioRegistro = "SIS457";
+                unidadMedidum.UsuarioRegistro = User.Identity?.Name;
                 unidadMedidum.FechaRegistro = DateTime.Now;
                 unidadMedidum.Estado = 1;
                 _context.Add(unidadMedidum);
@@ -88,7 +88,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,UsuarioRegistro,FechaRegistro,Estado")] UnidadMedidum unidadMedidum)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Estado")] UnidadMedidum unidadMedidum)
         {
             if (id != unidadMedidum.Id)
             {
@@ -99,9 +99,9 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    unidadMedidum.UsuarioRegistro = "SIS457";
+                    unidadMedidum.UsuarioRegistro = User.Identity?.Name;
                     unidadMedidum.FechaRegistro = DateTime.Now;
-                    unidadMedidum.Estado = 1;
+                    
                     _context.Update(unidadMedidum);
                     await _context.SaveChangesAsync();
                 }

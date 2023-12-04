@@ -57,7 +57,7 @@ namespace WebMusica.Controllers
         {
             if (!string.IsNullOrEmpty(pai.Nombre))
             {
-                pai.UsuarioRegistro = "SIS457";
+                pai.UsuarioRegistro = User.Identity?.Name;
                 pai.FechaRegistro = DateTime.Now;
                 pai.Estado = 1;
                 _context.Add(pai);
@@ -88,7 +88,7 @@ namespace WebMusica.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,UsuarioRegistro,FechaRegistro,Estado")] Pai pai)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Estado")] Pai pai)
         {
             if (id != pai.Id)
             {
@@ -99,9 +99,9 @@ namespace WebMusica.Controllers
             {
                 try
                 {
-                    pai.UsuarioRegistro = "SIS457";
+                    pai.UsuarioRegistro = User.Identity?.Name;
                     pai.FechaRegistro = DateTime.Now;
-                    pai.Estado = 1;
+                  
                     _context.Update(pai);
                     await _context.SaveChangesAsync();
                 }
